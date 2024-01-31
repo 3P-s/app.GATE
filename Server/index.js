@@ -1,12 +1,34 @@
+require('dotenv').config();
+require('express-async-errors');
+
 const express = require('express');
-const app = express();
-const port = process.env.PORT || 5000;
+const app = express(); 
+
+const notFoundMiddleware = require('./middleware/not-found');
+const errorHandlerMiddleware = require('./middleware/error-handler');
+
+const mainRouter = require('./routes/main')
 
 
-app.get('/',()=>{
-    res.send('Hello dattuda and virushali');
-})
+// middleware
+app.use(express.static('./public'));
+app.use(express.json());
+app.use('/auth/',mainRouter);
 
-app.listen(port,()=>{
-    console.log(`App ${port} vr gani aikt ahe`);
-})
+app.use(notFoundMiddleware);
+app.use(errorHandlerMiddleware);
+
+const port = process.env.PORT || 3000;
+
+const start = async () => {
+  try {
+    app.listen(port, () =>
+      console.log(`Server is listening on port ${port}...`)
+    );
+  } catch (error) {
+    console.log(error);
+  }
+};
+
+start();
+
