@@ -1,35 +1,51 @@
 import mongoose from 'mongoose';
 
 const questionSchema = new mongoose.Schema({
-    question: {
-        type: String,
-        required: true,
+    Qid: { 
+        type: Number, 
+        required: true, 
+        unique: true,
     },
-    A: {
-        type: String,
-        required: true,
+    question: { 
+        type: String, 
+        required: true 
     },
-    B: {
-        type: String,
-        required: true,
+    type: { 
+        type: String, 
+        required: true 
     },
-    C: {
-        type: String,
-        required: true,
+    A: { 
+        type: String, 
     },
-    D: {
-        type: String,
-        required: true,
+    B: { 
+        type: String, 
     },
-
-    correct: {
-        type: String,
-        required: true,
+    C: { 
+        type: String, 
     },
-    tags: {
-        type: Array,
-        required: true,
-    }
+    D: { 
+        type: String, 
+    },
+    answer: { 
+        type: Array, 
+        required: true 
+    },
+    marks: { 
+        type: Number, 
+        required: true 
+    },
+    year: { 
+        type: Number, 
+        required: true 
+    },
+    difficulty: { 
+        type: String, 
+        required: true 
+    },
+    tags: { 
+        type: Array, 
+        required: true 
+    },
 });
 
 module.exports = mongoose.model('question', questionSchema);
