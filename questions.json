@@ -6,10 +6,12 @@
         "B": "i+j-1",
         "C": "(j-1) + i(i-1)/2",
         "D": "i + j(j-1)/2",
-        "correct_option": ["C"],
+        "correct_option": [
+            "C"
+        ],
         "current_year": 1994,
         "difficulty_level": "Medium",
-        "marks":2,
+        "marks": 2,
         "tags": "Array",
         "appeared_in_next_exam": 0,
         "number_of_times_appeared": 1,
@@ -22,10 +24,12 @@
         "B": "15j+i+84",
         "C": "10i+j+89",
         "D": "10j+i+89",
-        "correct_option": ["B"],
+        "correct_option": [
+            "B"
+        ],
         "current_year": 1998,
         "difficulty_level": "Medium",
-        "marks":2,
+        "marks": 2,
         "tags": "Array",
         "years_since_last_appearance": 4,
         "appeared_in_next_exam": 0,
@@ -40,10 +44,12 @@
         "B": "Leaves s unchanged",
         "C": "Reverses all elements of s",
         "D": "None of the above",
-        "correct_option": ["A"],
+        "correct_option": [
+            "A"
+        ],
         "current_year": 2000,
         "difficulty_level": "Easy",
-        "marks":1,
+        "marks": 1,
         "tags": "Array",
         "years_since_last_appearance": 2,
         "appeared_in_next_exam": 0,
@@ -58,10 +64,12 @@
         "B": "n-1",
         "C": "n^2 - 3n + 2",
         "D": "n^2(n+1)/2",
-        "correct_option": ["A"],
+        "correct_option": [
+            "A"
+        ],
         "current_year": 2000,
         "difficulty_level": "Easy",
-        "marks":1,
+        "marks": 1,
         "tags": "Array",
         "years_since_last_appearance": 2,
         "appeared_in_next_exam": 0,
@@ -76,10 +84,12 @@
         "B": "Best if both are row-major",
         "C": "Best if both are column-major",
         "D": "independent of storage system",
-        "correct_option": ["D"],
+        "correct_option": [
+            "D"
+        ],
         "current_year": 2004,
         "difficulty_level": "Medium",
-        "marks":2,
+        "marks": 2,
         "tags": "Array",
         "years_since_last_appearance": 4,
         "appeared_in_next_exam": 1,
@@ -94,10 +104,12 @@
         "B": "top1 + top2 = MAXSIZE",
         "C": "(top 1 == MAXSIZE / 2) or (top 2 == MAXSIZE/2+1)",
         "D": "top 1 = top 2 - 1",
-        "correct_option": ["D"],
+        "correct_option": [
+            "D"
+        ],
         "current_year": 2004,
         "difficulty_level": "Medium",
-        "marks":2,
+        "marks": 2,
         "tags": "Array",
         "years_since_last_appearance": 4,
         "appeared_in_next_exam": 1,
@@ -112,10 +124,12 @@
         "B": "An array of 100 numbers",
         "C": "An array of 500 numbers",
         "D": "A dynamically allocated array of 550",
-        "correct_option": ["A"],
+        "correct_option": [
+            "A"
+        ],
         "current_year": 2005,
         "difficulty_level": "Easy",
-        "marks":1,
+        "marks": 1,
         "tags": "Array",
         "years_since_last_appearance": 1,
         "appeared_in_next_exam": 0,
@@ -130,10 +144,12 @@
         "B": "Maximum elements in any subarray of E",
         "C": "Sum of maximum elements in all possible sub-arrays of E",
         "D": "The sum of allelements of E",
-        "correct_option": ["A"],
+        "correct_option": [
+            "A"
+        ],
         "current_year": 2014,
         "difficulty_level": "Medium",
-        "marks":2,
+        "marks": 2,
         "tags": "Array",
         "years_since_last_appearance": 9,
         "appeared_in_next_exam": 0,
@@ -148,10 +164,12 @@
         "B": "19",
         "C": "10",
         "D": "11",
-        "correct_option": ["B"],
+        "correct_option": [
+            "B"
+        ],
         "current_year": 2020,
         "difficulty_level": "Easy",
-        "marks":1,
+        "marks": 1,
         "tags": "Array",
         "years_since_last_appearance": 6,
         "appeared_in_next_exam": 1,
@@ -166,10 +184,13 @@
         "B": "R7 = 19",
         "C": "R7 = 18",
         "D": "R7 is achieved by 3 different solutions",
-        "correct_option": ["C", "D"],
+        "correct_option": [
+            "C",
+            "D"
+        ],
         "current_year": 2021,
         "difficulty_level": "Medium",
-        "marks":2,
+        "marks": 2,
         "tags": "Array",
         "years_since_last_appearance": 1,
         "appeared_in_next_exam": 0,
@@ -184,10 +205,12 @@
         "B": "t > 3n/2 and t <= 2n-2",
         "C": "tc > n and t <= 3n/2",
         "D": "t > log(n) and t <= n",
-        "correct_option": ["C"],
+        "correct_option": [
+            "C"
+        ],
         "current_year": 2021,
         "difficulty_level": "Medium",
-        "marks":2,
+        "marks": 2,
         "tags": "Array",
         "years_since_last_appearance": 1,
         "appeared_in_next_exam": 0,
@@ -202,10 +225,12 @@
         "B": "space used is less",
         "C": "deletion is easier",
         "D": "None of the above",
-        "correct_option": ["C"],
+        "correct_option": [
+            "C"
+        ],
         "current_year": 1996,
         "difficulty_level": "Easy",
-        "marks":1,
+        "marks": 1,
         "tags": "Hashing",
         "appeared_in_next_exam": 0,
         "number_of_times_appeared": 1,
@@ -218,10 +243,12 @@
         "B": "ii only",
         "C": "i and ii only",
         "D": "iii or iv",
-        "correct_option": ["C"],
+        "correct_option": [
+            "C"
+        ],
         "current_year": 2004,
         "difficulty_level": "Medium",
-        "marks":1,
+        "marks": 1,
         "tags": "Hashing",
         "years_since_last_appearance": 8,
         "appeared_in_next_exam": 1,
@@ -236,10 +263,12 @@
         "B": "3",
         "C": "4",
         "D": "6",
-        "correct_option": ["D"],
+        "correct_option": [
+            "D"
+        ],
         "current_year": 2005,
         "difficulty_level": "Easy",
-        "marks":1,
+        "marks": 1,
         "tags": "Hashing",
         "years_since_last_appearance": 1,
         "appeared_in_next_exam": 0,
@@ -254,10 +283,12 @@
         "B": "6",
         "C": "7",
         "D": "10",
-        "correct_option": ["D"],
+        "correct_option": [
+            "D"
+        ],
         "current_year": 2007,
         "difficulty_level": "Medium",
-        "marks":2,
+        "marks": 2,
         "tags": "Hashing",
         "years_since_last_appearance": 2,
         "appeared_in_next_exam": 1,
@@ -272,10 +303,12 @@
         "B": "1,8,10,_,_,_,3",
         "C": "1,_,_,_,_,_,3",
         "D": "1,10,8,_,_,_,3",
-        "correct_option": ["B"],
+        "correct_option": [
+            "B"
+        ],
         "current_year": 2007,
         "difficulty_level": "Medium",
-        "marks":2,
+        "marks": 2,
         "tags": "Hashing",
         "years_since_last_appearance": 2,
         "appeared_in_next_exam": 1,
@@ -290,10 +323,12 @@
         "B": "Statement i is true and statement ii is false",
         "C": "Statement ii is true and statement i is false",
         "D": "Both are true",
-        "correct_option": ["C"],
+        "correct_option": [
+            "C"
+        ],
         "current_year": 2007,
         "difficulty_level": "Easy",
-        "marks":1,
+        "marks": 1,
         "tags": "Hashing",
         "years_since_last_appearance": 2,
         "appeared_in_next_exam": 1,
@@ -308,10 +343,12 @@
         "B": "4",
         "C": "6",
         "D": "7",
-        "correct_option": ["D"],
+        "correct_option": [
+            "D"
+        ],
         "current_year": 2008,
         "difficulty_level": "Medium",
-        "marks":2,
+        "marks": 2,
         "tags": "Hashing",
         "years_since_last_appearance": 1,
         "appeared_in_next_exam": 1,
@@ -326,10 +363,12 @@
         "B": "2-12, 3-13, 5-5, 8-18",
         "C": "2-12, 3-13, 4-2, 5-3, 6-23, 7-5, 8-18, 9-15",
         "D": "2-(12, 2), 3-(13,3,23), 5-(5,15), 8-18",
-        "correct_option": ["C"],
+        "correct_option": [
+            "C"
+        ],
         "current_year": 2009,
         "difficulty_level": "Medium",
-        "marks":2,
+        "marks": 2,
         "tags": "Hashing",
         "years_since_last_appearance": 1,
         "appeared_in_next_exam": 1,
@@ -344,10 +383,12 @@
         "B": "20",
         "C": "30",
         "D": "40",
-        "correct_option": ["C"],
+        "correct_option": [
+            "C"
+        ],
         "current_year": 2010,
         "difficulty_level": "Medium",
-        "marks":2,
+        "marks": 2,
         "tags": "Hashing",
         "years_since_last_appearance": 1,
         "appeared_in_next_exam": 0,
@@ -362,10 +403,12 @@
         "B": "34,42, 23,52,33,46",
         "C": "46,34,42,23,52,33",
         "D": "42,46,33,23,34,52",
-        "correct_option": ["C"],
+        "correct_option": [
+            "C"
+        ],
         "current_year": 2010,
         "difficulty_level": "Medium",
-        "marks":2,
+        "marks": 2,
         "tags": "Hashing",
         "years_since_last_appearance": 1,
         "appeared_in_next_exam": 0,
@@ -380,10 +423,12 @@
         "B": "3,3,3",
         "C": "4,0,1",
         "D": "3,0,2",
-        "correct_option": ["A"],
+        "correct_option": [
+            "A"
+        ],
         "current_year": 2014,
         "difficulty_level": "Medium",
-        "marks":2,
+        "marks": 2,
         "tags": "Hashing",
         "years_since_last_appearance": 4,
         "appeared_in_next_exam": 1,
@@ -398,10 +443,12 @@
         "B": "(99x98x97)/100^3",
         "C": "(97x96x95)/100^3",
         "D": "(97x96x95)/3!x100^3",
-        "correct_option": ["A"],
+        "correct_option": [
+            "A"
+        ],
         "current_year": 2014,
         "difficulty_level": "Medium",
-        "marks":2,
+        "marks": 2,
         "tags": "Hashing",
         "years_since_last_appearance": 4,
         "appeared_in_next_exam": 1,
@@ -416,10 +463,12 @@
         "B": "h(i) = i^3 mod 10",
         "C": "h(i) = (11*i^2) mod 10",
         "D": "h(i) = (12*i) mod 10",
-        "correct_option": ["B"],
+        "correct_option": [
+            "B"
+        ],
         "current_year": 2015,
         "difficulty_level": "Medium",
-        "marks":2,
+        "marks": 2,
         "tags": "Hashing",
         "years_since_last_appearance": 1,
         "appeared_in_next_exam": 0,
@@ -434,10 +483,12 @@
         "B": "80",
         "C": "90",
         "D": "100",
-        "correct_option": ["B"],
+        "correct_option": [
+            "B"
+        ],
         "current_year": 2015,
         "difficulty_level": "Easy",
-        "marks":1,
+        "marks": 1,
         "tags": "Hashing",
         "years_since_last_appearance": 1,
         "appeared_in_next_exam": 0,
@@ -452,10 +503,12 @@
         "B": "11",
         "C": "92",
         "D": "13",
-        "correct_option": ["D"],
+        "correct_option": [
+            "D"
+        ],
         "current_year": 2020,
         "difficulty_level": "Easy",
-        "marks":1,
+        "marks": 1,
         "tags": "Hashing",
         "years_since_last_appearance": 5,
         "appeared_in_next_exam": 1,
@@ -470,10 +523,12 @@
         "B": "5,9,4,13,10,7",
         "C": "9, 5, 13, 6, 10, 14",
         "D": "9, 5, 10, 6, 7, 1",
-        "correct_option": ["A"],
+        "correct_option": [
+            "A"
+        ],
         "current_year": 2021,
         "difficulty_level": "Medium",
-        "marks":2,
+        "marks": 2,
         "tags": "Hashing",
         "years_since_last_appearance": 1,
         "appeared_in_next_exam": 1,
@@ -488,10 +543,12 @@
         "B": "n/m",
         "C": "2n/m",
         "D": "n/2m",
-        "correct_option": ["B"],
+        "correct_option": [
+            "B"
+        ],
         "current_year": 2022,
         "difficulty_level": "Easy",
-        "marks":1,
+        "marks": 1,
         "tags": "Hashing",
         "years_since_last_appearance": 1,
         "appeared_in_next_exam": 1,
@@ -506,11 +563,214 @@
         "B": "Multilication method",
         "C": "Universal hashing",
         "D": "if k is prime, use division. Otherwise use Multiplication",
-        "correct_option": ["C"],
+        "correct_option": [
+            "C"
+        ],
         "current_year": 2023,
         "difficulty_level": "Easy",
-        "marks":1,
+        "marks": 1,
         "tags": "Hashing",
+        "years_since_last_appearance": 1,
+        "appeared_in_next_exam": 1,
+        "number_of_times_appeared": 1,
+        "total_years_since_first_appearance": 27,
+        "average_time_gap_between_appearances": 2.25
+    },
+    {
+        "Qid": 30,
+        "question_text": "A queue is implemented using an array such that ENQUEUE and DEQUEUE operations are performed efficiently. Which one of the following statements is CORRECT (refers to the number of items in the queue)?",
+        "A": "Both operations can be performed in O(1) Time",
+        "B": "At most one aperation is performed in O(1) Time but the worst-case time complexity of the other operation is Omega(n)",
+        "C": "The worst case time complexity of both operations is Omega(n)",
+        "D": "The worst-case time complexity of both operations is Omega(log n)",
+        "correct_option": [
+            "A"
+        ],
+        "current_year": 2016,
+        "difficulty_level": "Easy",
+        "marks": 1,
+        "tags": "Stacks and Queues",
+        "years_since_last_appearance": 1,
+        "appeared_in_next_exam": 1,
+        "number_of_times_appeared": 1,
+        "total_years_since_first_appearance": 27,
+        "average_time_gap_between_appearances": 2.25
+    },
+    {
+        "Qid": 31,
+        "question_text": "The result evaluating the postfix expression 10 5 + 60 6 / * 8 - is",
+        "A": "284",
+        "B": "213",
+        "C": "142",
+        "D": "71",
+        "correct_option": [
+            "C"
+        ],
+        "current_year": 2015,
+        "difficulty_level": "Easy",
+        "marks": 1,
+        "tags": "Stacks and Queues",
+        "years_since_last_appearance": 1,
+        "appeared_in_next_exam": 1,
+        "number_of_times_appeared": 1,
+        "total_years_since_first_appearance": 27,
+        "average_time_gap_between_appearances": 2.25
+    },
+    {
+        "Qid": 32,
+        "question_text": "A function f defined on stacks of integers satisfies the following properties. f(∅) = 0 and f (push (S, i)) = max (f(S), 0) + i for all stacks S and integers i. If a stack S contains the integers 2, -3, 2, -1, 2 in order from bottom to top, what is f(S)?",
+        "A": "6",
+        "B": "4",
+        "C": "3",
+        "D": "2",
+        "correct_option": [
+            "C"
+        ],
+        "current_year": 2005,
+        "difficulty_level": "Easy",
+        "marks": 1,
+        "tags": "Stacks and Queues",
+        "years_since_last_appearance": 1,
+        "appeared_in_next_exam": 1,
+        "number_of_times_appeared": 1,
+        "total_years_since_first_appearance": 27,
+        "average_time_gap_between_appearances": 2.25
+    },
+    {
+        "Qid": 33,
+        "question_text": "Consider the following sequence of operations on an empty stack.push(54); push(52); pop(); push(55); push(62); s = pop(); Consider the following sequence of operations on an empty queue.enqueue(21); enqueue(24); dequeue(); enqueue(28); enqueue(32); q = dequeue(); The value of s + q is",
+        "A": "74",
+        "B": "87",
+        "C": "85",
+        "D": "86",
+        "correct_option": [
+            "D"
+        ],
+        "current_year": 2021,
+        "difficulty_level": "Easy",
+        "marks": 2,
+        "tags": "Stacks and Queues",
+        "years_since_last_appearance": 1,
+        "appeared_in_next_exam": 1,
+        "number_of_times_appeared": 1,
+        "total_years_since_first_appearance": 27,
+        "average_time_gap_between_appearances": 2.25
+    },
+    {
+        "Qid": 34,
+        "question_text": "Suppose a stack implementation supports an instruction REVERSE, which reverses the order of elements on the stack, in addition to the PUSH and POP instructions. Which one of the following statements is TRUE with respect to this modified stack?",
+        "A": "A queue cannot be implemented using stack",
+        "B": "A queue can be implemented where ENQUEUE takes a single instruction and DEQUEUE takes a sequence of two instructions",
+        "C": "A queue can be implemented where ENQUEUE takes a sequence of three instructions and DEQUEUE takes a single instruction",
+        "D": "A queue can be implemented where both ENQUEUE and DEQUEUE take a single instruction each",
+        "correct_option": [
+            "A"
+        ],
+        "current_year": 2014,
+        "difficulty_level": "Easy",
+        "marks": 2,
+        "tags": "Stacks and Queues",
+        "years_since_last_appearance": 1,
+        "appeared_in_next_exam": 1,
+        "number_of_times_appeared": 1,
+        "total_years_since_first_appearance": 27,
+        "average_time_gap_between_appearances": 2.25
+    },
+    {
+        "Qid": 35,
+        "question_text": "Suppose a circular queue of capacity (n - 1) elements is implemented with an array of n elements. Assume that the insertion and deletion operations are carried out using REAR and FRONT as array index variables, respectively. Initially, REAR = FRONT = 0. The conditions to detect queue full and queue empty are",
+        "A": "full: (REAR+1) mod n == FRONT; empty: REAR == FRONT",
+        "B": "full: (REAR+1) mod n == FRONT; empty: (REAR+1) mod n == FRONT",
+        "C": "full: REAR == FRONT; empty: (REAR+1) mod n == FRONT",
+        "D": "full: (FRONT+1) mod n == FRONT; empty: REAR == FRONT",
+        "correct_option": [
+            "A"
+        ],
+        "current_year": 2012,
+        "difficulty_level": "Medium",
+        "marks": 2,
+        "tags": "Stacks and Queues",
+        "years_since_last_appearance": 1,
+        "appeared_in_next_exam": 1,
+        "number_of_times_appeared": 1,
+        "total_years_since_first_appearance": 27,
+        "average_time_gap_between_appearances": 2.25
+    },
+    {
+        "Qid": 36,
+        "question_text": "What is the worst case time complexity of inserting n elements into an empty linked list, if the linked list needs to be maintained in sorted order?",
+        "A": "Theta(n^2)",
+        "B": "Theta(n)",
+        "C": "Theta(n log n)",
+        "D": "Theta(1)",
+        "correct_option": [
+            "A",
+            "C"
+        ],
+        "current_year": 2020,
+        "difficulty_level": "Easy",
+        "marks": 1,
+        "tags": "Linked List",
+        "years_since_last_appearance": 1,
+        "appeared_in_next_exam": 1,
+        "number_of_times_appeared": 1,
+        "total_years_since_first_appearance": 27,
+        "average_time_gap_between_appearances": 2.25
+    },
+    {
+        "Qid": 37,
+        "question_text": "N items are stored in a sorted doubly linked list. For a delete  operation, a pointer is provided to the record to be deleted. For a decrease key operation, a pointer is provided to the record on which the operation is to be performed. An algorithm performs the following operations on the list in this order: Theta(N), delete, O(log N) insert, O(log N) fund, and Theta(N) decrease-key. What is the time complexity of all these operations put together?",
+        "A": "O(log^2(N))",
+        "B": "O(N)",
+        "C": "O(N^2)",
+        "D": "Theta(N^2 log N)",
+        "correct_option": [
+            "C"
+        ],
+        "current_year": 2016,
+        "difficulty_level": "Easy",
+        "marks": 1,
+        "tags": "Linked List",
+        "years_since_last_appearance": 1,
+        "appeared_in_next_exam": 1,
+        "number_of_times_appeared": 1,
+        "total_years_since_first_appearance": 27,
+        "average_time_gap_between_appearances": 2.25
+    },
+    {
+        "Qid": 38,
+        "question_text": "Let P be a singly linked list, Let Q be the pointer to an intermediate node x in the list.What is the worst-case time complexity of the best known algorithm to delete the node x from the list?",
+        "A": "O(n)",
+        "B": "O(log^2(n))",
+        "C": "O(log n)",
+        "D": "O(1)",
+        "correct_option": [
+            "D"
+        ],
+        "current_year": 2004,
+        "difficulty_level": "Easy",
+        "marks": 1,
+        "tags": "Linked List",
+        "years_since_last_appearance": 1,
+        "appeared_in_next_exam": 1,
+        "number_of_times_appeared": 1,
+        "total_years_since_first_appearance": 27,
+        "average_time_gap_between_appearances": 2.25
+    },
+    {
+        "Qid": 39,
+        "question_text": "The preorder traversal sequence of a binary search tree is 30, 20, 10, 15, 25, 23, 39, 35, 42. Which one of the following is the postorder traversal sequence of the same tree?",
+        "A": "10,20,15,23,25,35,42,39,30",
+        "B": "15,10,25,23,20,42,35,39,30",
+        "C": "15,20,10,23,25,42,35,39,30",
+        "D": "15,10,23,25,20,35,42,39,30",
+        "correct_option": [
+            "D"
+        ],
+        "current_year": 2013,
+        "difficulty_level": "Medium",
+        "marks": 2,
+        "tags": "Linked List, Binary Search Tree",
         "years_since_last_appearance": 1,
         "appeared_in_next_exam": 1,
         "number_of_times_appeared": 1,
