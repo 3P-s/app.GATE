@@ -770,7 +770,7 @@
         "current_year": 2013,
         "difficulty_level": "Medium",
         "marks": 2,
-        "tags": "Linked List, Binary Search Tree",
+        "tags": "Linked List",
         "years_since_last_appearance": 1,
         "appeared_in_next_exam": 1,
         "number_of_times_appeared": 1,
@@ -1179,6 +1179,464 @@
     },
     {
         "Qid": 60,
+        "question_text": "Let G be an undirected graph. Consider a depth-first traversal of G, and let T be the resulting depth-first search tree. Let u be a vertex in G and let v be the first new (unvisited) vertex visited after visiting u in the traversal. Which of the following statements is always true?",
+        "A": "{u, v} must be an edge in G, and u is a descendant of v in T",
+        "B": "{u, v} must be an edge in G, and u is a descendant of u in T",
+        "C": "if {u,v} is not an edge in G then u is a leaf in T",
+        "D": "if {u,v} is not an edge in G then u and v must have the same parent in T",
+        "correct_option": [
+            "C"
+        ],
+        "current_year": 2000,
+        "difficulty_level": "Medium",
+        "marks": 2,
+        "tags": "Graph",
+        "appeared_in_next_exam": 1,
+        "number_of_times_appeared": 1,
+        "average_time_gap_between_appearances": 1.47
+    },
+    {
+        "Qid": 61,
+        "question_text": "How many undirected graphs (not necessarily connected) can be constructed out of a given set V = { v1,v2,........,vn } of n vertices?",
+        "A": "n(n-1)/2",
+        "B": "2^n",
+        "C": "n!",
+        "D": "2^(n(n-1)/2)",
+        "correct_option": [
+            "D"
+        ],
+        "current_year": 2001,
+        "difficulty_level": "Medium",
+        "marks": 2,
+        "tags": "Graph",
+        "years_since_last_appearance": 1,
+        "appeared_in_next_exam": 0,
+        "number_of_times_appeared": 2,
+        "total_years_since_first_appearance": 1,
+        "average_time_gap_between_appearances": 1.47
+    },
+    {
+        "Qid": 62,
+        "question_text": "Consider an undirected unweighted graph G. Let a breadth-first traversal of G be done starting from a node r. Let d(r, u) and d(r, v) be the lengths of the shortest paths from r to u and v respectively in G. If u is visited before v during the breadth-first traversal, which of the following statements is correct?",
+        "A": "d(r,u) < d(r,v)",
+        "B": "d(r,u) > d(r,v)",
+        "C": "d(r,u) <= d(r,v)",
+        "D": "None of the above",
+        "correct_option": [
+            "C"
+        ],
+        "current_year": 2001,
+        "difficulty_level": "Medium",
+        "marks": 2,
+        "tags": "Graph",
+        "years_since_last_appearance": 1,
+        "appeared_in_next_exam": 0,
+        "number_of_times_appeared": 2,
+        "total_years_since_first_appearance": 1,
+        "average_time_gap_between_appearances": 1.47
+    },
+    {
+        "Qid": 63,
+        "question_text": "Consider the following graph among the following sequences I. a b e g h f II. a b f e h g III. a b f h g e IV. a f g h b e",
+        "A": "I, II and IV only",
+        "B": "I and IV only",
+        "C": "II, III and IV only",
+        "D": "i, III and IV only",
+        "correct_option": [
+            "D"
+        ],
+        "current_year": 2003,
+        "difficulty_level": "Easy",
+        "marks": 1,
+        "tags": "Graph",
+        "years_since_last_appearance": 2,
+        "appeared_in_next_exam": 1,
+        "number_of_times_appeared": 1,
+        "total_years_since_first_appearance": 3,
+        "average_time_gap_between_appearances": 1.47
+    },
+    {
+        "Qid": 64,
+        "question_text": "In a depth-first traversal of a graph G with n vertices,k edges are marked as tree edges. The number of connected components in G is",
+        "A": "k",
+        "B": "k+1",
+        "C": "k-1",
+        "D": "n-k",
+        "correct_option": [
+            "D"
+        ],
+        "current_year": 2004,
+        "difficulty_level": "Easy",
+        "marks": 1,
+        "tags": "Graph",
+        "years_since_last_appearance": 1,
+        "appeared_in_next_exam": 0,
+        "number_of_times_appeared": 1,
+        "total_years_since_first_appearance": 4,
+        "average_time_gap_between_appearances": 1.47
+    },
+    {
+        "Qid": 65,
+        "question_text": "Let T be a depth-first search tree in an undirected graph G. Vertices u and v are leaves of this tree T. The degrees of both u and v in G are at least 2. Which one of the following statements is true?",
+        "A": "there mush exist a vertex w adjacent to both u and v in G",
+        "B": "there must exist a vertex w whose removal disconnects u and v in G",
+        "C": "there must exist a cycle in G containing u and v",
+        "D": "there must exist a cycle in G containing u and all its neighbours in G",
+        "correct_option": [
+            "D"
+        ],
+        "current_year": 2006,
+        "difficulty_level": "Medium",
+        "marks": 2,
+        "tags": "Graph",
+        "years_since_last_appearance": 2,
+        "appeared_in_next_exam": 1,
+        "number_of_times_appeared": 2,
+        "total_years_since_first_appearance": 6,
+        "average_time_gap_between_appearances": 1.47
+    },
+    {
+        "Qid": 66,
+        "question_text": "Consider the depth-first-search of an undirected graph with 3 vertices P, Q, and R. Let discovery time d(u) represent the time instant when the vertex u is first visited, and finish time f(u) represent the time instant when the vertex u is last visited. Given that d(P) = 5 units      f(P) = 12 units d(Q) = 6 units      f(Q) = 10 units d(R) = 14 unit      f(R) = 18 units Which one of the following statements is TRUE about the graph",
+        "A": "there is only one connected component",
+        "B": "There are 2 connected components and p and R are connected",
+        "C": "There are 2 connected components and Q and R are connected",
+        "D": "There are 2 connected components and P and Q are connected",
+        "correct_option": [
+            "D"
+        ],
+        "current_year": 2006,
+        "difficulty_level": "Medium",
+        "marks": 2,
+        "tags": "Graph",
+        "years_since_last_appearance": 2,
+        "appeared_in_next_exam": 1,
+        "number_of_times_appeared": 2,
+        "total_years_since_first_appearance": 6,
+        "average_time_gap_between_appearances": 1.47
+    },
+    {
+        "Qid": 67,
+        "question_text": "What is the largest integer m such that every simple connected graph with n vertices and n edges contains at least m different spanning trees?",
+        "A": "1",
+        "B": "2",
+        "C": "3",
+        "D": "n",
+        "correct_option": [
+            "C"
+        ],
+        "current_year": 2007,
+        "difficulty_level": "Medium",
+        "marks": 2,
+        "tags": "Graph",
+        "years_since_last_appearance": 1,
+        "appeared_in_next_exam": 1,
+        "number_of_times_appeared": 1,
+        "total_years_since_first_appearance": 7,
+        "average_time_gap_between_appearances": 1.47
+    },
+    {
+        "Qid": 68,
+        "question_text": "Consider the following sequence of nodes for the undirected graph given below. 1.a b e f d g c 2.a b e f c g d 3.a d g e b c f 4.a d b c g e f A Depth First Search (DFS) is started at node a. The nodes are listed in the order they are first visited. Which all of the above is (are) possible output(s)?",
+        "A": "1 and 3 only",
+        "B": "2 and 3 only",
+        "C": "2, 3 and 4 only",
+        "D": "1,2 and 3 ",
+        "correct_option": [
+            "B"
+        ],
+        "current_year": 2008,
+        "difficulty_level": "Medium",
+        "marks": 2,
+        "tags": "Graph",
+        "years_since_last_appearance": 1,
+        "appeared_in_next_exam": 0,
+        "number_of_times_appeared": 1,
+        "total_years_since_first_appearance": 8,
+        "average_time_gap_between_appearances": 1.47
+    },
+    {
+        "Qid": 69,
+        "question_text": "Consider a complete undirected graph with vertex set {0,1,2,3,4}. Entry Wij in the matrix W below is the weight of the edge {i, j} What is the minimum possible weight of a path P from vertex 1 to vertex 2 in this graph such that P contains at most 3 edges?",
+        "A": "7",
+        "B": "8",
+        "C": "9",
+        "D": "10",
+        "correct_option": [
+            "B"
+        ],
+        "current_year": 2010,
+        "difficulty_level": "Medium",
+        "marks": 2,
+        "tags": "Graph",
+        "years_since_last_appearance": 2,
+        "appeared_in_next_exam": 0,
+        "number_of_times_appeared": 2,
+        "total_years_since_first_appearance": 10,
+        "average_time_gap_between_appearances": 1.47
+    },
+    {
+        "Qid": 70,
+        "question_text": "Consider a complete undirected graph with vertex set {0,1,2,3,4}. Entry Wij in the matrix W below is the weight of the edge {i, j} What is the minimum possible weight of a spanning tree T in this graph such that vertex 0 is a leaf node in the tree T?",
+        "A": "7",
+        "B": "8",
+        "C": "9",
+        "D": "10",
+        "correct_option": [
+            "D"
+        ],
+        "current_year": 2010,
+        "difficulty_level": "Medium",
+        "marks": 2,
+        "tags": "Graph",
+        "years_since_last_appearance": 2,
+        "appeared_in_next_exam": 0,
+        "number_of_times_appeared": 2,
+        "total_years_since_first_appearance": 10,
+        "average_time_gap_between_appearances": 1.47
+    },
+    {
+        "Qid": 71,
+        "question_text": "Let G be a weighted graph with edge weights greater than one and G' be the graph constructed by squaring the weights of edges in G. Let T and T' be the minimum spanning trees of G and G' respectively, with total weights t and t'. Which of the following statements is TRUE?",
+        "A": "T` = T with total weight t` = t^2",
+        "B": "T` = T with total weight t` < t^2",
+        "C": "T` != T with total weight t` = t^2",
+        "D": "None of the above",
+        "correct_option": [
+            "B"
+        ],
+        "current_year": 2012,
+        "difficulty_level": "Medium",
+        "marks": 2,
+        "tags": "Graph",
+        "years_since_last_appearance": 2,
+        "appeared_in_next_exam": 0,
+        "number_of_times_appeared": 1,
+        "total_years_since_first_appearance": 12,
+        "average_time_gap_between_appearances": 1.47
+    },
+    {
+        "Qid": 72,
+        "question_text": "Let G be a graph with n vertices and m edges. What is the tightest upper bound on the running time of Depth First Search on G, when G is represented as an adjacency matrix?",
+        "A": "O(n)",
+        "B": "O(n+m)",
+        "C": "O(n^2)",
+        "D": "O(m^2)",
+        "correct_option": [
+            "C"
+        ],
+        "current_year": 2014,
+        "difficulty_level": "Easy",
+        "marks": 1,
+        "tags": "Graph",
+        "years_since_last_appearance": 2,
+        "appeared_in_next_exam": 1,
+        "number_of_times_appeared": 3,
+        "total_years_since_first_appearance": 14,
+        "average_time_gap_between_appearances": 1.47
+    },
+    {
+        "Qid": 73,
+        "question_text": "Suppose depth first search is executed on the graph below starting at some unknown vertex. Assume that a recursive call to visit a vertex is made only after first checking that the vertex has not been visited earlier. Then the maximum possible recursion depth (including the initial call) is _________.",
+        "A": "19",
+        "B": "20",
+        "C": "21",
+        "D": "18",
+        "correct_option": [
+            "A"
+        ],
+        "current_year": 2014,
+        "difficulty_level": "Easy",
+        "marks": 1,
+        "tags": "Graph",
+        "years_since_last_appearance": 2,
+        "appeared_in_next_exam": 1,
+        "number_of_times_appeared": 3,
+        "total_years_since_first_appearance": 14,
+        "average_time_gap_between_appearances": 1.47
+    },
+    {
+        "Qid": 74,
+        "question_text": "Consider the tree arcs of a BFS traversal from a source node W in an unweighted, connected, undirected graph. The tree T formed by the tree arcs is a data structure for computing",
+        "A": "the shortest path between every pair of vertex",
+        "B": "the shortest path from W to every other vertex",
+        "C": "the shortest path from w to only those nodes that are leaves of T",
+        "D": "the longest path in the graph",
+        "correct_option": [
+            "B"
+        ],
+        "current_year": 2014,
+        "difficulty_level": "Easy",
+        "marks": 1,
+        "tags": "Graph",
+        "years_since_last_appearance": 2,
+        "appeared_in_next_exam": 1,
+        "number_of_times_appeared": 3,
+        "total_years_since_first_appearance": 14,
+        "average_time_gap_between_appearances": 1.47
+    },
+    {
+        "Qid": 75,
+        "question_text": "Let G = (V, E) be a simple undirected graph, and s be a particular vertex in it called the source. For x belongs to v, let d(x) denote the shortest distance in G from s to x. A breadth first search (BFS) is performed starting at s. Let T be the resultant BFS tree. If (u, v) is an edge of G that is not in T, then which one of the following CANNOT be the value of d(u)-d(v)?",
+        "A": "-1",
+        "B": "0",
+        "C": "1",
+        "D": "2",
+        "correct_option": [
+            "D"
+        ],
+        "current_year": 2015,
+        "difficulty_level": "Medium",
+        "marks": 2,
+        "tags": "Graph",
+        "years_since_last_appearance": 1,
+        "appeared_in_next_exam": 1,
+        "number_of_times_appeared": 2,
+        "total_years_since_first_appearance": 15,
+        "average_time_gap_between_appearances": 1.47
+    },
+    {
+        "Qid": 76,
+        "question_text": "Let G be a connected undirected graph of 100 vertices and 300 edges. The weight of a minimum spanning tree of G is 500. When the weight of each edge of G is increased by five, the weight of a minimum spanning tree becomes ________.",
+        "A": "995",
+        "B": "1000",
+        "C": "1005",
+        "D": "None of the above",
+        "correct_option": [
+            "A"
+        ],
+        "current_year": 2015,
+        "difficulty_level": "Medium",
+        "marks": 2,
+        "tags": "Graph",
+        "years_since_last_appearance": 1,
+        "appeared_in_next_exam": 1,
+        "number_of_times_appeared": 2,
+        "total_years_since_first_appearance": 15,
+        "average_time_gap_between_appearances": 1.47
+    },
+    {
+        "Qid": 77,
+        "question_text": "In an adjacency list representation of an undirected simple graph G = (V,E) each edge (u,v) has two adjacency list entries: [v] in the adjacency list of u and [u] in the adjacency list of v. These are called twins of each other. A twin pointer is a pointer from an adjacency list entry to its twin. If |E|=m and |V| = n, and the memory size is not a constraint, what is the time complexity of the most efficient algorithm to set the twin pointer in each entry in each adjacency list?",
+        "A": "O(n^2)",
+        "B": "O(n+m)",
+        "C": "O(m^2)",
+        "D": "O(n^4)",
+        "correct_option": [
+            "B"
+        ],
+        "current_year": 2016,
+        "difficulty_level": "Medium",
+        "marks": 2,
+        "tags": "Graph",
+        "years_since_last_appearance": 1,
+        "appeared_in_next_exam": 0,
+        "number_of_times_appeared": 3,
+        "total_years_since_first_appearance": 16,
+        "average_time_gap_between_appearances": 1.47
+    },
+    {
+        "Qid": 78,
+        "question_text": "Consider the following directed graph:GATE CSE 2016 Set 1 Data Structures - Graphs Question 6 English. The number of different topological orderings of the vertices of the graph is ________________.",
+        "A": "5",
+        "B": "6",
+        "C": "7",
+        "D": "8",
+        "correct_option": [
+            "B"
+        ],
+        "current_year": 2016,
+        "difficulty_level": "Medium",
+        "marks": 2,
+        "tags": "Graph",
+        "years_since_last_appearance": 1,
+        "appeared_in_next_exam": 0,
+        "number_of_times_appeared": 3,
+        "total_years_since_first_appearance": 16,
+        "average_time_gap_between_appearances": 1.47
+    },
+    {
+        "Qid": 79,
+        "question_text": "Breadth First Search (BFS) is started on a binary tree beginning from the root vertex. There is a vertex t at a distance four from the root. If t is the n-th vertex in this BFS traversal, then the maximum possible value of n is ___________.",
+        "A": "30",
+        "B": "31",
+        "C": "32",
+        "D": "33",
+        "correct_option": [
+            "B"
+        ],
+        "current_year": 2016,
+        "difficulty_level": "Medium",
+        "marks": 2,
+        "tags": "Graph",
+        "years_since_last_appearance": 1,
+        "appeared_in_next_exam": 0,
+        "number_of_times_appeared": 3,
+        "total_years_since_first_appearance": 16,
+        "average_time_gap_between_appearances": 1.47
+    },
+    {
+        "Qid": 80,
+        "question_text": "Let G be a graph with 100! vertices, with each vertex labelled by a distinct permutation of the numbers 1,2,..100. There is an edge between vertices u and v if and only if the label of u can be obtained by swapping two adjacent numbers in the label of v. Let y denote the degree of a vertex in G and z denote the number of connected components in G. Then, y+10z = _____.",
+        "A": "109",
+        "B": "110",
+        "C": "111",
+        "D": "121",
+        "correct_option": [
+            "A"
+        ],
+        "current_year": 2018,
+        "difficulty_level": "Medium",
+        "marks": 2,
+        "tags": "Graph",
+        "years_since_last_appearance": 2,
+        "appeared_in_next_exam": 0,
+        "number_of_times_appeared": 2,
+        "total_years_since_first_appearance": 18,
+        "average_time_gap_between_appearances": 1.47
+    },
+    {
+        "Qid": 81,
+        "question_text": "Let G be a simple undirected graph. Let Td be a depth first search tree of G. Let Tb be a breadth first search tree of G. Consider the following statements. 1) No edge of G is a cross edge with respect to Td. (A cross edge in G is between two nodes neither of which is an ancestor of the other in Td.) 2) For every edge (u,v) of G, if u is at depth i and v is at depth j in Tb, then |i-j| = 1. Which of the statements above must necessarily be true?",
+        "A": "1 only",
+        "B": "2 only",
+        "C": "both",
+        "D": "neither",
+        "correct_option": [
+            "A"
+        ],
+        "current_year": 2018,
+        "difficulty_level": "Medium",
+        "marks": 2,
+        "tags": "Graph",
+        "years_since_last_appearance": 2,
+        "appeared_in_next_exam": 0,
+        "number_of_times_appeared": 2,
+        "total_years_since_first_appearance": 18,
+        "average_time_gap_between_appearances": 1.47
+    },
+    {
+        "Qid": 82,
+        "question_text": "Let G = (V, E) be a directed, weighted graph with weight function w: E -> R. For some function f: V -> R, for each edge (u, v) belongs to E, define w'(u, v) as w(u, v) + f(u) - f(v). Which one of the options completes the following sentence so that it is TRUE? “The shortest paths in G under w are shortest paths under w’ too, _______”.",
+        "A": "for every f: V-> R",
+        "B": "if and only if all u belong to V, f(u) is positive",
+        "C": "if and only if all u belong to V, f(u) is negative",
+        "D": "if and only if f(u) is the distance from s to u in the graph obtained by adding new verex s to G and edges of zero weight from s to every vertex of G.",
+        "correct_option": [
+            "A"
+        ],
+        "current_year": 2020,
+        "difficulty_level": "Medium",
+        "marks": 2,
+        "tags": "Graph",
+        "years_since_last_appearance": 2,
+        "appeared_in_next_exam": 0,
+        "number_of_times_appeared": 1,
+        "total_years_since_first_appearance": 20,
+        "average_time_gap_between_appearances": 1.47
+    },
+    {
+        "Qid": 83,
         "question_text": "The number of internal nodes of a rooted tree with n nodes, n>1, is",
         "A": "n-1",
         "B": "n",
