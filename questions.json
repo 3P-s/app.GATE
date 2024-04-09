@@ -592,7 +592,7 @@
         "tags": "Stacks and Queues",
         "appeared_in_next_exam": 0,
         "number_of_times_appeared": 1,
-        "average_time_gap_between_appearances": 2.25
+        "average_time_gap_between_appearances": 1.94
     },
     {
         "Qid": 50,
@@ -612,7 +612,7 @@
         "appeared_in_next_exam": 1,
         "number_of_times_appeared": 1,
         "total_years_since_first_appearance": 3,
-        "average_time_gap_between_appearances": 2.25
+        "average_time_gap_between_appearances": 1.94
     },
     {
         "Qid": 49,
@@ -632,7 +632,7 @@
         "appeared_in_next_exam": 0,
         "number_of_times_appeared": 1,
         "total_years_since_first_appearance": 4,
-        "average_time_gap_between_appearances": 2.25
+        "average_time_gap_between_appearances": 1.94
     },
     {
         "Qid": 48,
@@ -652,7 +652,7 @@
         "appeared_in_next_exam": 1,
         "number_of_times_appeared": 1,
         "total_years_since_first_appearance": 6,
-        "average_time_gap_between_appearances": 2.25
+        "average_time_gap_between_appearances": 1.94
     },
     {
         "Qid": 47,
@@ -672,7 +672,7 @@
         "appeared_in_next_exam": 0,
         "number_of_times_appeared": 1,
         "total_years_since_first_appearance": 7,
-        "average_time_gap_between_appearances": 2.25
+        "average_time_gap_between_appearances": 1.94
     },
     {
         "Qid": 46,
@@ -692,7 +692,7 @@
         "appeared_in_next_exam": 1,
         "number_of_times_appeared": 1,
         "total_years_since_first_appearance": 12,
-        "average_time_gap_between_appearances": 2.25
+        "average_time_gap_between_appearances": 1.94
     },
     {
         "Qid": 44,
@@ -712,7 +712,7 @@
         "appeared_in_next_exam": 1,
         "number_of_times_appeared": 2,
         "total_years_since_first_appearance": 13,
-        "average_time_gap_between_appearances": 2.25
+        "average_time_gap_between_appearances": 1.94
     },
     {
         "Qid": 45,
@@ -732,7 +732,7 @@
         "appeared_in_next_exam": 1,
         "number_of_times_appeared": 2,
         "total_years_since_first_appearance": 13,
-        "average_time_gap_between_appearances": 2.25
+        "average_time_gap_between_appearances": 1.94
     },
     {
         "Qid": 32,
@@ -751,8 +751,8 @@
         "years_since_last_appearance": 1,
         "appeared_in_next_exam": 1,
         "number_of_times_appeared": 1,
-        "total_years_since_first_appearance": 27,
-        "average_time_gap_between_appearances": 2.25
+        "total_years_since_first_appearance": 14,
+        "average_time_gap_between_appearances": 1.94
     },
     {
         "Qid": 42,
@@ -770,9 +770,9 @@
         "tags": "Stacks and Queues",
         "years_since_last_appearance": 1,
         "appeared_in_next_exam": 1,
-        "number_of_times_appeared": 1,
-        "total_years_since_first_appearance": 27,
-        "average_time_gap_between_appearances": 2.25
+        "number_of_times_appeared": 2,
+        "total_years_since_first_appearance": 15,
+        "average_time_gap_between_appearances": 1.94
     },
     {
         "Qid": 43,
@@ -790,9 +790,9 @@
         "tags": "Stacks and Queues",
         "years_since_last_appearance": 1,
         "appeared_in_next_exam": 1,
-        "number_of_times_appeared": 1,
-        "total_years_since_first_appearance": 27,
-        "average_time_gap_between_appearances": 2.25
+        "number_of_times_appeared": 2,
+        "total_years_since_first_appearance": 15,
+        "average_time_gap_between_appearances": 1.94
     },
     {
         "Qid": 41,
@@ -809,10 +809,10 @@
         "marks": 2,
         "tags": "Stacks and Queues",
         "years_since_last_appearance": 1,
-        "appeared_in_next_exam": 1,
+        "appeared_in_next_exam": 0,
         "number_of_times_appeared": 1,
-        "total_years_since_first_appearance": 27,
-        "average_time_gap_between_appearances": 2.25
+        "total_years_since_first_appearance": 16,
+        "average_time_gap_between_appearances": 1.94
     },
     {
         "Qid": 35,
@@ -828,11 +828,11 @@
         "difficulty_level": "Medium",
         "marks": 2,
         "tags": "Stacks and Queues",
-        "years_since_last_appearance": 1,
-        "appeared_in_next_exam": 1,
+        "years_since_last_appearance": 5,
+        "appeared_in_next_exam": 0,
         "number_of_times_appeared": 1,
-        "total_years_since_first_appearance": 27,
-        "average_time_gap_between_appearances": 2.25
+        "total_years_since_first_appearance": 21,
+        "average_time_gap_between_appearances": 1.94
     },
     {
         "Qid": 34,
@@ -848,11 +848,11 @@
         "difficulty_level": "Easy",
         "marks": 2,
         "tags": "Stacks and Queues",
-        "years_since_last_appearance": 1,
+        "years_since_last_appearance": 2,
         "appeared_in_next_exam": 1,
         "number_of_times_appeared": 1,
-        "total_years_since_first_appearance": 27,
-        "average_time_gap_between_appearances": 2.25
+        "total_years_since_first_appearance": 23,
+        "average_time_gap_between_appearances": 1.94
     },
     {
         "Qid": 31,
@@ -871,8 +871,8 @@
         "years_since_last_appearance": 1,
         "appeared_in_next_exam": 1,
         "number_of_times_appeared": 1,
-        "total_years_since_first_appearance": 27,
-        "average_time_gap_between_appearances": 2.25
+        "total_years_since_first_appearance": 24,
+        "average_time_gap_between_appearances": 1.94
     },
     {
         "Qid": 30,
@@ -889,10 +889,10 @@
         "marks": 1,
         "tags": "Stacks and Queues",
         "years_since_last_appearance": 1,
-        "appeared_in_next_exam": 1,
+        "appeared_in_next_exam": 0,
         "number_of_times_appeared": 1,
-        "total_years_since_first_appearance": 27,
-        "average_time_gap_between_appearances": 2.25
+        "total_years_since_first_appearance": 25,
+        "average_time_gap_between_appearances": 1.94
     },
     {
         "Qid": 33,
@@ -908,11 +908,11 @@
         "difficulty_level": "Easy",
         "marks": 2,
         "tags": "Stacks and Queues",
-        "years_since_last_appearance": 1,
+        "years_since_last_appearance": 5,
         "appeared_in_next_exam": 1,
         "number_of_times_appeared": 1,
-        "total_years_since_first_appearance": 27,
-        "average_time_gap_between_appearances": 2.25
+        "total_years_since_first_appearance": 30,
+        "average_time_gap_between_appearances": 1.94
     },
     {
         "Qid": 40,
@@ -929,10 +929,148 @@
         "marks": 1,
         "tags": "Stacks and Queues",
         "years_since_last_appearance": 1,
-        "appeared_in_next_exam": 1,
+        "appeared_in_next_exam": 0,
         "number_of_times_appeared": 1,
-        "total_years_since_first_appearance": 27,
-        "average_time_gap_between_appearances": 2.25
+        "total_years_since_first_appearance": 31,
+        "average_time_gap_between_appearances": 1.94
+    },
+    {
+        "Qid": 57,
+        "question_text": "In a circular linked list organization,insertion of a record involves modification of :",
+        "A": "One Pointer",
+        "B": "Multiple Pointers",
+        "C": "No Pointers",
+        "D": "Two pointers",
+        "correct_option": [
+            "A"
+        ],
+        "current_year": 1987,
+        "difficulty_level": "Medium",
+        "marks": 2,
+        "tags": "Linked List",
+        "appeared_in_next_exam": 0,
+        "number_of_times_appeared": 1,
+        "average_time_gap_between_appearances": 5.22
+    },
+    {
+        "Qid": 56,
+        "question_text": "Linked lists are not suitable data structures of which one of the following problems?",
+        "A": "Insertion SOrt",
+        "B": "Binary Search",
+        "C": "Radix SOrt",
+        "D": "Polynomial Manipulation",
+        "correct_option": [
+            "B"
+        ],
+        "current_year": 1994,
+        "difficulty_level": "Medium",
+        "marks": 2,
+        "tags": "Linked List",
+        "years_since_last_appearance": 7,
+        "appeared_in_next_exam": 0,
+        "number_of_times_appeared": 1,
+        "total_years_since_first_appearance": 7,
+        "average_time_gap_between_appearances": 5.22
+    },
+    {
+        "Qid": 55,
+        "question_text": "A circularly linked list is used to represent a Queue. A single variable p is used to access the Queue. To which node should p point such that both the operations enQueue and deQueue can be performed in constant time?",
+        "A": "rear node",
+        "B": "front node",
+        "C": "not possible with a asingle pointer",
+        "D": "node next to front",
+        "correct_option": [
+            "A"
+        ],
+        "current_year": 2004,
+        "difficulty_level": "Medium",
+        "marks": 2,
+        "tags": "Linked List",
+        "years_since_last_appearance": 10,
+        "appeared_in_next_exam": 0,
+        "number_of_times_appeared": 2,
+        "total_years_since_first_appearance": 17,
+        "average_time_gap_between_appearances": 5.22
+    },
+    {
+        "Qid": 38,
+        "question_text": "Let P be a singly linked list, Let Q be the pointer to an intermediate node x in the list.What is the worst-case time complexity of the best known algorithm to delete the node x from the list?",
+        "A": "O(n)",
+        "B": "O(log^2(n))",
+        "C": "O(log n)",
+        "D": "O(1)",
+        "correct_option": [
+            "D"
+        ],
+        "current_year": 2004,
+        "difficulty_level": "Easy",
+        "marks": 1,
+        "tags": "Linked List",
+        "years_since_last_appearance": 10,
+        "appeared_in_next_exam": 0,
+        "number_of_times_appeared": 2,
+        "total_years_since_first_appearance": 17,
+        "average_time_gap_between_appearances": 5.22
+    },
+    {
+        "Qid": 39,
+        "question_text": "The preorder traversal sequence of a binary search tree is 30, 20, 10, 15, 25, 23, 39, 35, 42. Which one of the following is the postorder traversal sequence of the same tree?",
+        "A": "10,20,15,23,25,35,42,39,30",
+        "B": "15,10,25,23,20,42,35,39,30",
+        "C": "15,20,10,23,25,42,35,39,30",
+        "D": "15,10,23,25,20,35,42,39,30",
+        "correct_option": [
+            "D"
+        ],
+        "current_year": 2013,
+        "difficulty_level": "Medium",
+        "marks": 2,
+        "tags": "Linked List",
+        "years_since_last_appearance": 9,
+        "appeared_in_next_exam": 0,
+        "number_of_times_appeared": 1,
+        "total_years_since_first_appearance": 26,
+        "average_time_gap_between_appearances": 5.22
+    },
+    {
+        "Qid": 37,
+        "question_text": "N items are stored in a sorted doubly linked list. For a delete  operation, a pointer is provided to the record to be deleted. For a decrease key operation, a pointer is provided to the record on which the operation is to be performed. An algorithm performs the following operations on the list in this order: Theta(N), delete, O(log N) insert, O(log N) fund, and Theta(N) decrease-key. What is the time complexity of all these operations put together?",
+        "A": "O(log^2(N))",
+        "B": "O(N)",
+        "C": "O(N^2)",
+        "D": "Theta(N^2 log N)",
+        "correct_option": [
+            "C"
+        ],
+        "current_year": 2016,
+        "difficulty_level": "Easy",
+        "marks": 1,
+        "tags": "Linked List",
+        "years_since_last_appearance": 3,
+        "appeared_in_next_exam": 0,
+        "number_of_times_appeared": 1,
+        "total_years_since_first_appearance": 29,
+        "average_time_gap_between_appearances": 5.22
+    },
+    {
+        "Qid": 54,
+        "question_text": "A queue is implemented using a non-circular singly linked list. The queue has a head pointer and a tail pointer, as shown in the figure. Let denote the number of nodes in the queue. Let be implemented by inserting a new node at the head, and be implemented by deletion of a node from the tail.GATE CSE 2018 Data Structures - Linked List Question 3 English Which one of the following is the time complexity of the most time-efficient implementation of and respectively, for this data structure?",
+        "A": "Theta(1) and Theta(1)",
+        "B": "Theta(1) and Theta(n)",
+        "C": "Theta(n) and Theta(1)",
+        "D": "Theta(n) and Theta(n)",
+        "correct_option": [
+            "B"
+        ],
+        "current_year": 2018,
+        "difficulty_level": "Medium",
+        "marks": 2,
+        "tags": "Linked List",
+        "years_since_last_appearance": 2,
+        "appeared_in_next_exam": 0,
+        "number_of_times_appeared": 1,
+        "total_years_since_first_appearance": 31,
+        "average_time_gap_between_appearances": 5.22
     },
     {
         "Qid": 36,
@@ -949,71 +1087,11 @@
         "difficulty_level": "Easy",
         "marks": 1,
         "tags": "Linked List",
-        "years_since_last_appearance": 1,
+        "years_since_last_appearance": 2,
         "appeared_in_next_exam": 1,
         "number_of_times_appeared": 1,
-        "total_years_since_first_appearance": 27,
-        "average_time_gap_between_appearances": 2.25
-    },
-    {
-        "Qid": 37,
-        "question_text": "N items are stored in a sorted doubly linked list. For a delete  operation, a pointer is provided to the record to be deleted. For a decrease key operation, a pointer is provided to the record on which the operation is to be performed. An algorithm performs the following operations on the list in this order: Theta(N), delete, O(log N) insert, O(log N) fund, and Theta(N) decrease-key. What is the time complexity of all these operations put together?",
-        "A": "O(log^2(N))",
-        "B": "O(N)",
-        "C": "O(N^2)",
-        "D": "Theta(N^2 log N)",
-        "correct_option": [
-            "C"
-        ],
-        "current_year": 2016,
-        "difficulty_level": "Easy",
-        "marks": 1,
-        "tags": "Linked List",
-        "years_since_last_appearance": 1,
-        "appeared_in_next_exam": 1,
-        "number_of_times_appeared": 1,
-        "total_years_since_first_appearance": 27,
-        "average_time_gap_between_appearances": 2.25
-    },
-    {
-        "Qid": 38,
-        "question_text": "Let P be a singly linked list, Let Q be the pointer to an intermediate node x in the list.What is the worst-case time complexity of the best known algorithm to delete the node x from the list?",
-        "A": "O(n)",
-        "B": "O(log^2(n))",
-        "C": "O(log n)",
-        "D": "O(1)",
-        "correct_option": [
-            "D"
-        ],
-        "current_year": 2004,
-        "difficulty_level": "Easy",
-        "marks": 1,
-        "tags": "Linked List",
-        "years_since_last_appearance": 1,
-        "appeared_in_next_exam": 1,
-        "number_of_times_appeared": 1,
-        "total_years_since_first_appearance": 27,
-        "average_time_gap_between_appearances": 2.25
-    },
-    {
-        "Qid": 39,
-        "question_text": "The preorder traversal sequence of a binary search tree is 30, 20, 10, 15, 25, 23, 39, 35, 42. Which one of the following is the postorder traversal sequence of the same tree?",
-        "A": "10,20,15,23,25,35,42,39,30",
-        "B": "15,10,25,23,20,42,35,39,30",
-        "C": "15,20,10,23,25,42,35,39,30",
-        "D": "15,10,23,25,20,35,42,39,30",
-        "correct_option": [
-            "D"
-        ],
-        "current_year": 2013,
-        "difficulty_level": "Medium",
-        "marks": 2,
-        "tags": "Linked List",
-        "years_since_last_appearance": 1,
-        "appeared_in_next_exam": 1,
-        "number_of_times_appeared": 1,
-        "total_years_since_first_appearance": 27,
-        "average_time_gap_between_appearances": 2.25
+        "total_years_since_first_appearance": 33,
+        "average_time_gap_between_appearances": 5.22
     },
     {
         "Qid": 52,
@@ -1029,11 +1107,11 @@
         "difficulty_level": "Easy",
         "marks": 1,
         "tags": "Linked List",
-        "years_since_last_appearance": 1,
-        "appeared_in_next_exam": 1,
-        "number_of_times_appeared": 1,
-        "total_years_since_first_appearance": 27,
-        "average_time_gap_between_appearances": 2.25
+        "years_since_last_appearance": 2,
+        "appeared_in_next_exam": 0,
+        "number_of_times_appeared": 2,
+        "total_years_since_first_appearance": 35,
+        "average_time_gap_between_appearances": 5.22
     },
     {
         "Qid": 53,
@@ -1049,131 +1127,11 @@
         "difficulty_level": "Easy",
         "marks": 1,
         "tags": "Linked List",
-        "years_since_last_appearance": 1,
-        "appeared_in_next_exam": 1,
-        "number_of_times_appeared": 1,
-        "total_years_since_first_appearance": 27,
-        "average_time_gap_between_appearances": 2.25
-    },
-    {
-        "Qid": 54,
-        "question_text": "A queue is implemented using a non-circular singly linked list. The queue has a head pointer and a tail pointer, as shown in the figure. Let denote the number of nodes in the queue. Let be implemented by inserting a new node at the head, and be implemented by deletion of a node from the tail.GATE CSE 2018 Data Structures - Linked List Question 3 English Which one of the following is the time complexity of the most time-efficient implementation of and respectively, for this data structure?",
-        "A": "Theta(1) and Theta(1)",
-        "B": "Theta(1) and Theta(n)",
-        "C": "Theta(n) and Theta(1)",
-        "D": "Theta(n) and Theta(n)",
-        "correct_option": [
-            "B"
-        ],
-        "current_year": 2018,
-        "difficulty_level": "Medium",
-        "marks": 2,
-        "tags": "Linked List",
-        "years_since_last_appearance": 1,
-        "appeared_in_next_exam": 1,
-        "number_of_times_appeared": 1,
-        "total_years_since_first_appearance": 27,
-        "average_time_gap_between_appearances": 2.25
-    },
-    {
-        "Qid": 55,
-        "question_text": "A circularly linked list is used to represent a Queue. A single variable p is used to access the Queue. To which node should p point such that both the operations enQueue and deQueue can be performed in constant time?",
-        "A": "rear node",
-        "B": "front node",
-        "C": "not possible with a asingle pointer",
-        "D": "node next to front",
-        "correct_option": [
-            "A"
-        ],
-        "current_year": 2004,
-        "difficulty_level": "Medium",
-        "marks": 2,
-        "tags": "Linked List",
-        "years_since_last_appearance": 1,
-        "appeared_in_next_exam": 1,
-        "number_of_times_appeared": 1,
-        "total_years_since_first_appearance": 27,
-        "average_time_gap_between_appearances": 2.25
-    },
-    {
-        "Qid": 56,
-        "question_text": "Linked lists are not suitable data structures of which one of the following problems?",
-        "A": "Insertion SOrt",
-        "B": "Binary Search",
-        "C": "Radix SOrt",
-        "D": "Polynomial Manipulation",
-        "correct_option": [
-            "B"
-        ],
-        "current_year": 1994,
-        "difficulty_level": "Medium",
-        "marks": 2,
-        "tags": "Linked List",
-        "years_since_last_appearance": 1,
-        "appeared_in_next_exam": 1,
-        "number_of_times_appeared": 1,
-        "total_years_since_first_appearance": 27,
-        "average_time_gap_between_appearances": 2.25
-    },
-    {
-        "Qid": 57,
-        "question_text": "In a circular linked list organization,insertion of a record involves modification of :",
-        "A": "One Pointer",
-        "B": "Multiple Pointers",
-        "C": "No Pointers",
-        "D": "Two pointers",
-        "correct_option": [
-            "A"
-        ],
-        "current_year": 1987,
-        "difficulty_level": "Medium",
-        "marks": 2,
-        "tags": "Linked List",
-        "years_since_last_appearance": 1,
-        "appeared_in_next_exam": 1,
-        "number_of_times_appeared": 1,
-        "total_years_since_first_appearance": 27,
-        "average_time_gap_between_appearances": 2.25
-    },
-    {
-        "Qid": 58,
-        "question_text": "The number of different directed tree with 3 nodes are",
-        "A": "1",
-        "B": "3",
-        "C": "4",
-        "D": "5",
-        "correct_option": [
-            "C"
-        ],
-        "current_year": 1990,
-        "difficulty_level": "Medium",
-        "marks": 2,
-        "tags": "Tree",
-        "years_since_last_appearance": 1,
-        "appeared_in_next_exam": 1,
-        "number_of_times_appeared": 1,
-        "total_years_since_first_appearance": 27,
-        "average_time_gap_between_appearances": 2.25
-    },
-    {
-        "Qid": 59,
-        "question_text": "The number of leaf nodes in a rooted tree of n nodes, with each node having 0 or 3 children is:",
-        "A": "n/2",
-        "B": "n/3",
-        "C": "n-1",
-        "D": "n",
-        "correct_option": [
-            "A"
-        ],
-        "current_year": 1990,
-        "difficulty_level": "Medium",
-        "marks": 2,
-        "tags": "Tree",
-        "years_since_last_appearance": 1,
-        "appeared_in_next_exam": 1,
-        "number_of_times_appeared": 1,
-        "total_years_since_first_appearance": 27,
-        "average_time_gap_between_appearances": 2.25
+        "years_since_last_appearance": 2,
+        "appeared_in_next_exam": 0,
+        "number_of_times_appeared": 2,
+        "total_years_since_first_appearance": 35,
+        "average_time_gap_between_appearances": 5.22
     },
     {
         "Qid": 60,
