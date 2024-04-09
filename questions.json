@@ -577,18 +577,276 @@
         "average_time_gap_between_appearances": 2.25
     },
     {
-        "Qid": 30,
-        "question_text": "A queue is implemented using an array such that ENQUEUE and DEQUEUE operations are performed efficiently. Which one of the following statements is CORRECT (refers to the number of items in the queue)?",
-        "A": "Both operations can be performed in O(1) Time",
-        "B": "At most one aperation is performed in O(1) Time but the worst-case time complexity of the other operation is Omega(n)",
-        "C": "The worst case time complexity of both operations is Omega(n)",
-        "D": "The worst-case time complexity of both operations is Omega(log n)",
+        "Qid": 51,
+        "question_text": "The following sequence of operations is performed on stack: PUSH (10),PUSH (20),POP,PUSH (10),PUSH (20),POP,POP,POP,PUSH (20),POP The sequence of the value popped out is:",
+        "A": "20,10,20,10,20",
+        "B": "20,20,10,10,20",
+        "C": "10,20,20,10,20",
+        "D": "20,20,10,20,10",
+        "correct_option": [
+            "B"
+        ],
+        "current_year": 1991,
+        "difficulty_level": "Medium",
+        "marks": 2,
+        "tags": "Stacks and Queues",
+        "appeared_in_next_exam": 0,
+        "number_of_times_appeared": 1,
+        "average_time_gap_between_appearances": 2.25
+    },
+    {
+        "Qid": 50,
+        "question_text": "Which of the following permutations can be obtained in the output (in the same order) using a stack assuming that the input is the sequence 1, 2, 3, 4, 5 in that order?",
+        "A": "34512",
+        "B": "34521",
+        "C": "15234",
+        "D": "54312",
+        "correct_option": [
+            "B"
+        ],
+        "current_year": 1994,
+        "difficulty_level": "Medium",
+        "marks": 2,
+        "tags": "Stacks and Queues",
+        "years_since_last_appearance": 3,
+        "appeared_in_next_exam": 1,
+        "number_of_times_appeared": 1,
+        "total_years_since_first_appearance": 3,
+        "average_time_gap_between_appearances": 2.25
+    },
+    {
+        "Qid": 49,
+        "question_text": "The postfix expression for the infix expression A + B * (C + D) / F + D * E is:",
+        "A": "AB+CD+*F/D+E*",
+        "B": "ABCD+*F/+DE*+",
+        "C": "A*B+CD/F*DE++",
+        "D": "A+*BCD/F*DE++",
+        "correct_option": [
+            "b"
+        ],
+        "current_year": 1995,
+        "difficulty_level": "Medium",
+        "marks": 2,
+        "tags": "Stacks and Queues",
+        "years_since_last_appearance": 1,
+        "appeared_in_next_exam": 0,
+        "number_of_times_appeared": 1,
+        "total_years_since_first_appearance": 4,
+        "average_time_gap_between_appearances": 2.25
+    },
+    {
+        "Qid": 48,
+        "question_text": "A priority queue Q is used to implement a stack that stores characters. PUSH (C) is implemented INSERT (Q, C, K) where K is an appropriate integer key chosen by the implementation. POP is implemented as DELETEMIN(Q). For a sequence of operations, the keys chosen are in",
+        "A": "non-increasing order",
+        "B": "non-decreasing order",
+        "C": "strictly increasing order",
+        "D": "strivtly decreasing order",
         "correct_option": [
             "A"
         ],
-        "current_year": 2016,
+        "current_year": 1997,
+        "difficulty_level": "Medium",
+        "marks": 2,
+        "tags": "Stacks and Queues",
+        "years_since_last_appearance": 2,
+        "appeared_in_next_exam": 1,
+        "number_of_times_appeared": 1,
+        "total_years_since_first_appearance": 6,
+        "average_time_gap_between_appearances": 2.25
+    },
+    {
+        "Qid": 47,
+        "question_text": "Compute the post fix equivalent of the following expression. 3 * log(x+1) - a/2",
+        "A": "3x1 + log*a2/-",
+        "B": "3x1 + log*a2-/",
+        "C": "3+1 * log*a2/-",
+        "D": "3+1 - log*a2/x",
+        "correct_option": [
+            "A"
+        ],
+        "current_year": 1998,
+        "difficulty_level": "Medium",
+        "marks": 2,
+        "tags": "Stacks and Queues",
+        "years_since_last_appearance": 1,
+        "appeared_in_next_exam": 0,
+        "number_of_times_appeared": 1,
+        "total_years_since_first_appearance": 7,
+        "average_time_gap_between_appearances": 2.25
+    },
+    {
+        "Qid": 46,
+        "question_text": "Let S be a stack of size n >= 1. Starting with the empty stack, suppose we push the first n natural numbers in sequence, and then perform n pop operations. Assume that Push and Pop operations take X seconds each, and Y seconds elapse between the end of one such stack operation and the start of the next operation. For m >= 1, define the stack-life of m as the time elapsed from the end of Push(m) to the start of the pop operation that removes m from S. The average stack-life of an element of this stack is",
+        "A": "n(X+Y)",
+        "B": "3Y+2X",
+        "C": "n(X+Y)-X",
+        "D": "Y+2X",
+        "correct_option": [
+            "C"
+        ],
+        "current_year": 2003,
+        "difficulty_level": "Medium",
+        "marks": 2,
+        "tags": "Stacks and Queues",
+        "years_since_last_appearance": 5,
+        "appeared_in_next_exam": 1,
+        "number_of_times_appeared": 1,
+        "total_years_since_first_appearance": 12,
+        "average_time_gap_between_appearances": 2.25
+    },
+    {
+        "Qid": 44,
+        "question_text": "Assume that the operators +, -, ×, are left associative and ^ is right associative. The order of precedence (from highest to lowest) is ^, ×, +, -. The postfix expression corresponding to the infix expression a + b×c-d^e^f is",
+        "A": "abc*+def^^-",
+        "B": "abc*+de^f^-",
+        "C": "ab+c*d-e^f^",
+        "D": "-+a*bc^^def",
+        "correct_option": [
+            "A"
+        ],
+        "current_year": 2004,
+        "difficulty_level": "Medium",
+        "marks": 2,
+        "tags": "Stacks and Queues",
+        "years_since_last_appearance": 1,
+        "appeared_in_next_exam": 1,
+        "number_of_times_appeared": 2,
+        "total_years_since_first_appearance": 13,
+        "average_time_gap_between_appearances": 2.25
+    },
+    {
+        "Qid": 45,
+        "question_text": "A program attempts to generate as many permutation as possible of the string “abcd” by pushing the character a,b,c,d in the same order onto a stack, but it may pop off the top character at any time. Which one of the following a strings CANNOT be generated using this program?",
+        "A": "abcd",
+        "B": "dcba",
+        "C": "cbad",
+        "D": "cabd",
+        "correct_option": [
+            "D"
+        ],
+        "current_year": 2004,
+        "difficulty_level": "Medium",
+        "marks": 2,
+        "tags": "Stacks and Queues",
+        "years_since_last_appearance": 1,
+        "appeared_in_next_exam": 1,
+        "number_of_times_appeared": 2,
+        "total_years_since_first_appearance": 13,
+        "average_time_gap_between_appearances": 2.25
+    },
+    {
+        "Qid": 32,
+        "question_text": "A function f defined on stacks of integers satisfies the following properties. f(∅) = 0 and f (push (S, i)) = max (f(S), 0) + i for all stacks S and integers i. If a stack S contains the integers 2, -3, 2, -1, 2 in order from bottom to top, what is f(S)?",
+        "A": "6",
+        "B": "4",
+        "C": "3",
+        "D": "2",
+        "correct_option": [
+            "C"
+        ],
+        "current_year": 2005,
         "difficulty_level": "Easy",
         "marks": 1,
+        "tags": "Stacks and Queues",
+        "years_since_last_appearance": 1,
+        "appeared_in_next_exam": 1,
+        "number_of_times_appeared": 1,
+        "total_years_since_first_appearance": 27,
+        "average_time_gap_between_appearances": 2.25
+    },
+    {
+        "Qid": 42,
+        "question_text": "An implementation of a queue Q, using two stacks S1 and S2, is given below: void insert(Q, X){  push(S1, X);} void delete(Q){ if(stack - empty(S1)) then {   print('Q is empty');   return; }else while (!(stack - empty(S1))){   X = pop(S1);   push(S2, X); } X = pop(S2);} Let n insert and m(<=n) delete operations be performed in an arbitrary order on an empty queue Q. Let x and y be the number of push and pop operations performed respectively in the process. Which one of the following is true for all m and n?",
+        "A": "n + m <= x <= 2n and 2m <= y <= n + m",
+        "B": "n + m <= x <= 2n and 2m <= y <= 2n",
+        "C": "2m <= x <= 2n and 2m <= y <= n + m",
+        "D": "2m <= x <= 2n and 2m <= y <= 2n",
+        "correct_option": [
+            "A"
+        ],
+        "current_year": 2006,
+        "difficulty_level": "Medium",
+        "marks": 2,
+        "tags": "Stacks and Queues",
+        "years_since_last_appearance": 1,
+        "appeared_in_next_exam": 1,
+        "number_of_times_appeared": 1,
+        "total_years_since_first_appearance": 27,
+        "average_time_gap_between_appearances": 2.25
+    },
+    {
+        "Qid": 43,
+        "question_text": "The following function computes the value of mCn correctly for all legal values m and n (m≥1,n≥0 and m>n) int func(int m, int n) { if (E) return 1; else return(func(m -1, n) + func(m - 1, n - 1)); } In the above function, which of the following is the correct expression for E?",
+        "A": "n == 0 || m == 1",
+        "B": "n == 0 && m == 1",
+        "C": "n == 0 || m == n",
+        "D": "n == 0 && m == n",
+        "correct_option": [
+            "C"
+        ],
+        "current_year": 2006,
+        "difficulty_level": "Medium",
+        "marks": 2,
+        "tags": "Stacks and Queues",
+        "years_since_last_appearance": 1,
+        "appeared_in_next_exam": 1,
+        "number_of_times_appeared": 1,
+        "total_years_since_first_appearance": 27,
+        "average_time_gap_between_appearances": 2.25
+    },
+    {
+        "Qid": 41,
+        "question_text": "Suppose you are given an implementation of a queue of integers. The operations that can be performed on the queue are: i. isEmpty (Q) — returns true if the queue is empty false otherwise. ii. delete (Q) — deletes the element at the front of the queue and returns its value. iii. insert (Q, i) — inserts the integer i at the rear of the queue. Consider the following function: void f (queue Q) {  int i ;  if (!isEmpty(Q)) { i = delete(Q); f(Q); insert(Q, i); } } What operation is performed by the above function f ?",
+        "A": "Leaves the queue Q unchanged",
+        "B": "Reverses the order of the elements in the queue Q",
+        "C": "Deletes the elemet at the front of the queue Q and inserts it at the rear keeping the other elemets in the same order",
+        "D": "Empties the queue Q",
+        "correct_option": [
+            "B"
+        ],
+        "current_year": 2007,
+        "difficulty_level": "Medium",
+        "marks": 2,
+        "tags": "Stacks and Queues",
+        "years_since_last_appearance": 1,
+        "appeared_in_next_exam": 1,
+        "number_of_times_appeared": 1,
+        "total_years_since_first_appearance": 27,
+        "average_time_gap_between_appearances": 2.25
+    },
+    {
+        "Qid": 35,
+        "question_text": "Suppose a circular queue of capacity (n - 1) elements is implemented with an array of n elements. Assume that the insertion and deletion operations are carried out using REAR and FRONT as array index variables, respectively. Initially, REAR = FRONT = 0. The conditions to detect queue full and queue empty are",
+        "A": "full: (REAR+1) mod n == FRONT; empty: REAR == FRONT",
+        "B": "full: (REAR+1) mod n == FRONT; empty: (REAR+1) mod n == FRONT",
+        "C": "full: REAR == FRONT; empty: (REAR+1) mod n == FRONT",
+        "D": "full: (FRONT+1) mod n == FRONT; empty: REAR == FRONT",
+        "correct_option": [
+            "A"
+        ],
+        "current_year": 2012,
+        "difficulty_level": "Medium",
+        "marks": 2,
+        "tags": "Stacks and Queues",
+        "years_since_last_appearance": 1,
+        "appeared_in_next_exam": 1,
+        "number_of_times_appeared": 1,
+        "total_years_since_first_appearance": 27,
+        "average_time_gap_between_appearances": 2.25
+    },
+    {
+        "Qid": 34,
+        "question_text": "Suppose a stack implementation supports an instruction REVERSE, which reverses the order of elements on the stack, in addition to the PUSH and POP instructions. Which one of the following statements is TRUE with respect to this modified stack?",
+        "A": "A queue cannot be implemented using stack",
+        "B": "A queue can be implemented where ENQUEUE takes a single instruction and DEQUEUE takes a sequence of two instructions",
+        "C": "A queue can be implemented where ENQUEUE takes a sequence of three instructions and DEQUEUE takes a single instruction",
+        "D": "A queue can be implemented where both ENQUEUE and DEQUEUE take a single instruction each",
+        "correct_option": [
+            "A"
+        ],
+        "current_year": 2014,
+        "difficulty_level": "Easy",
+        "marks": 2,
         "tags": "Stacks and Queues",
         "years_since_last_appearance": 1,
         "appeared_in_next_exam": 1,
@@ -617,16 +875,16 @@
         "average_time_gap_between_appearances": 2.25
     },
     {
-        "Qid": 32,
-        "question_text": "A function f defined on stacks of integers satisfies the following properties. f(∅) = 0 and f (push (S, i)) = max (f(S), 0) + i for all stacks S and integers i. If a stack S contains the integers 2, -3, 2, -1, 2 in order from bottom to top, what is f(S)?",
-        "A": "6",
-        "B": "4",
-        "C": "3",
-        "D": "2",
+        "Qid": 30,
+        "question_text": "A queue is implemented using an array such that ENQUEUE and DEQUEUE operations are performed efficiently. Which one of the following statements is CORRECT (refers to the number of items in the queue)?",
+        "A": "Both operations can be performed in O(1) Time",
+        "B": "At most one aperation is performed in O(1) Time but the worst-case time complexity of the other operation is Omega(n)",
+        "C": "The worst case time complexity of both operations is Omega(n)",
+        "D": "The worst-case time complexity of both operations is Omega(log n)",
         "correct_option": [
-            "C"
+            "A"
         ],
-        "current_year": 2005,
+        "current_year": 2016,
         "difficulty_level": "Easy",
         "marks": 1,
         "tags": "Stacks and Queues",
@@ -657,38 +915,18 @@
         "average_time_gap_between_appearances": 2.25
     },
     {
-        "Qid": 34,
-        "question_text": "Suppose a stack implementation supports an instruction REVERSE, which reverses the order of elements on the stack, in addition to the PUSH and POP instructions. Which one of the following statements is TRUE with respect to this modified stack?",
-        "A": "A queue cannot be implemented using stack",
-        "B": "A queue can be implemented where ENQUEUE takes a single instruction and DEQUEUE takes a sequence of two instructions",
-        "C": "A queue can be implemented where ENQUEUE takes a sequence of three instructions and DEQUEUE takes a single instruction",
-        "D": "A queue can be implemented where both ENQUEUE and DEQUEUE take a single instruction each",
+        "Qid": 40,
+        "question_text": "Consider the queues Q1 containing four elements and Q2 containing none (shown as the Initial State in the figure). The only operations allowed on these two queues are Enqueue (Q, element) and Dequeue (Q). The minimum number of Enqueue operations on Q1 required to place the elements of Q1 in Q2 in reverse order (shown as the Final State in the figure) without using any additional storage is ______________.",
+        "A": "5",
+        "B": "2",
+        "C": "3",
+        "D": "0",
         "correct_option": [
-            "A"
+            "D"
         ],
-        "current_year": 2014,
+        "current_year": 2022,
         "difficulty_level": "Easy",
-        "marks": 2,
-        "tags": "Stacks and Queues",
-        "years_since_last_appearance": 1,
-        "appeared_in_next_exam": 1,
-        "number_of_times_appeared": 1,
-        "total_years_since_first_appearance": 27,
-        "average_time_gap_between_appearances": 2.25
-    },
-    {
-        "Qid": 35,
-        "question_text": "Suppose a circular queue of capacity (n - 1) elements is implemented with an array of n elements. Assume that the insertion and deletion operations are carried out using REAR and FRONT as array index variables, respectively. Initially, REAR = FRONT = 0. The conditions to detect queue full and queue empty are",
-        "A": "full: (REAR+1) mod n == FRONT; empty: REAR == FRONT",
-        "B": "full: (REAR+1) mod n == FRONT; empty: (REAR+1) mod n == FRONT",
-        "C": "full: REAR == FRONT; empty: (REAR+1) mod n == FRONT",
-        "D": "full: (FRONT+1) mod n == FRONT; empty: REAR == FRONT",
-        "correct_option": [
-            "A"
-        ],
-        "current_year": 2012,
-        "difficulty_level": "Medium",
-        "marks": 2,
+        "marks": 1,
         "tags": "Stacks and Queues",
         "years_since_last_appearance": 1,
         "appeared_in_next_exam": 1,
@@ -771,246 +1009,6 @@
         "difficulty_level": "Medium",
         "marks": 2,
         "tags": "Linked List",
-        "years_since_last_appearance": 1,
-        "appeared_in_next_exam": 1,
-        "number_of_times_appeared": 1,
-        "total_years_since_first_appearance": 27,
-        "average_time_gap_between_appearances": 2.25
-    },
-    {
-        "Qid": 40,
-        "question_text": "Consider the queues Q1 containing four elements and Q2 containing none (shown as the Initial State in the figure). The only operations allowed on these two queues are Enqueue (Q, element) and Dequeue (Q). The minimum number of Enqueue operations on Q1 required to place the elements of Q1 in Q2 in reverse order (shown as the Final State in the figure) without using any additional storage is ______________.",
-        "A": "5",
-        "B": "2",
-        "C": "3",
-        "D": "0",
-        "correct_option": [
-            "D"
-        ],
-        "current_year": 2022,
-        "difficulty_level": "Easy",
-        "marks": 1,
-        "tags": "Stacks and Queues",
-        "years_since_last_appearance": 1,
-        "appeared_in_next_exam": 1,
-        "number_of_times_appeared": 1,
-        "total_years_since_first_appearance": 27,
-        "average_time_gap_between_appearances": 2.25
-    },
-    {
-        "Qid": 41,
-        "question_text": "Suppose you are given an implementation of a queue of integers. The operations that can be performed on the queue are: i. isEmpty (Q) — returns true if the queue is empty false otherwise. ii. delete (Q) — deletes the element at the front of the queue and returns its value. iii. insert (Q, i) — inserts the integer i at the rear of the queue. Consider the following function: void f (queue Q) {  int i ;  if (!isEmpty(Q)) { i = delete(Q); f(Q); insert(Q, i); } } What operation is performed by the above function f ?",
-        "A": "Leaves the queue Q unchanged",
-        "B": "Reverses the order of the elements in the queue Q",
-        "C": "Deletes the elemet at the front of the queue Q and inserts it at the rear keeping the other elemets in the same order",
-        "D": "Empties the queue Q",
-        "correct_option": [
-            "B"
-        ],
-        "current_year": 2007,
-        "difficulty_level": "Medium",
-        "marks": 2,
-        "tags": "Stacks and Queues",
-        "years_since_last_appearance": 1,
-        "appeared_in_next_exam": 1,
-        "number_of_times_appeared": 1,
-        "total_years_since_first_appearance": 27,
-        "average_time_gap_between_appearances": 2.25
-    },
-    {
-        "Qid": 42,
-        "question_text": "An implementation of a queue Q, using two stacks S1 and S2, is given below: void insert(Q, X){  push(S1, X);} void delete(Q){ if(stack - empty(S1)) then {   print('Q is empty');   return; }else while (!(stack - empty(S1))){   X = pop(S1);   push(S2, X); } X = pop(S2);} Let n insert and m(<=n) delete operations be performed in an arbitrary order on an empty queue Q. Let x and y be the number of push and pop operations performed respectively in the process. Which one of the following is true for all m and n?",
-        "A": "n + m <= x <= 2n and 2m <= y <= n + m",
-        "B": "n + m <= x <= 2n and 2m <= y <= 2n",
-        "C": "2m <= x <= 2n and 2m <= y <= n + m",
-        "D": "2m <= x <= 2n and 2m <= y <= 2n",
-        "correct_option": [
-            "A"
-        ],
-        "current_year": 2006,
-        "difficulty_level": "Medium",
-        "marks": 2,
-        "tags": "Stacks and Queues",
-        "years_since_last_appearance": 1,
-        "appeared_in_next_exam": 1,
-        "number_of_times_appeared": 1,
-        "total_years_since_first_appearance": 27,
-        "average_time_gap_between_appearances": 2.25
-    },
-    {
-        "Qid": 43,
-        "question_text": "The following function computes the value of mCn correctly for all legal values m and n (m≥1,n≥0 and m>n) int func(int m, int n) { if (E) return 1; else return(func(m -1, n) + func(m - 1, n - 1)); } In the above function, which of the following is the correct expression for E?",
-        "A": "n == 0 || m == 1",
-        "B": "n == 0 && m == 1",
-        "C": "n == 0 || m == n",
-        "D": "n == 0 && m == n",
-        "correct_option": [
-            "C"
-        ],
-        "current_year": 2006,
-        "difficulty_level": "Medium",
-        "marks": 2,
-        "tags": "Stacks and Queues",
-        "years_since_last_appearance": 1,
-        "appeared_in_next_exam": 1,
-        "number_of_times_appeared": 1,
-        "total_years_since_first_appearance": 27,
-        "average_time_gap_between_appearances": 2.25
-    },
-    {
-        "Qid": 44,
-        "question_text": "Assume that the operators +, -, ×, are left associative and ^ is right associative. The order of precedence (from highest to lowest) is ^, ×, +, -. The postfix expression corresponding to the infix expression a + b×c-d^e^f is",
-        "A": "abc*+def^^-",
-        "B": "abc*+de^f^-",
-        "C": "ab+c*d-e^f^",
-        "D": "-+a*bc^^def",
-        "correct_option": [
-            "A"
-        ],
-        "current_year": 2004,
-        "difficulty_level": "Medium",
-        "marks": 2,
-        "tags": "Stacks and Queues",
-        "years_since_last_appearance": 1,
-        "appeared_in_next_exam": 1,
-        "number_of_times_appeared": 1,
-        "total_years_since_first_appearance": 27,
-        "average_time_gap_between_appearances": 2.25
-    },
-    {
-        "Qid": 45,
-        "question_text": "A program attempts to generate as many permutation as possible of the string “abcd” by pushing the character a,b,c,d in the same order onto a stack, but it may pop off the top character at any time. Which one of the following a strings CANNOT be generated using this program?",
-        "A": "abcd",
-        "B": "dcba",
-        "C": "cbad",
-        "D": "cabd",
-        "correct_option": [
-            "D"
-        ],
-        "current_year": 2004,
-        "difficulty_level": "Medium",
-        "marks": 2,
-        "tags": "Stacks and Queues",
-        "years_since_last_appearance": 1,
-        "appeared_in_next_exam": 1,
-        "number_of_times_appeared": 1,
-        "total_years_since_first_appearance": 27,
-        "average_time_gap_between_appearances": 2.25
-    },
-    {
-        "Qid": 46,
-        "question_text": "Let S be a stack of size n >= 1. Starting with the empty stack, suppose we push the first n natural numbers in sequence, and then perform n pop operations. Assume that Push and Pop operations take X seconds each, and Y seconds elapse between the end of one such stack operation and the start of the next operation. For m >= 1, define the stack-life of m as the time elapsed from the end of Push(m) to the start of the pop operation that removes m from S. The average stack-life of an element of this stack is",
-        "A": "n(X+Y)",
-        "B": "3Y+2X",
-        "C": "n(X+Y)-X",
-        "D": "Y+2X",
-        "correct_option": [
-            "C"
-        ],
-        "current_year": 2003,
-        "difficulty_level": "Medium",
-        "marks": 2,
-        "tags": "Stacks and Queues",
-        "years_since_last_appearance": 1,
-        "appeared_in_next_exam": 1,
-        "number_of_times_appeared": 1,
-        "total_years_since_first_appearance": 27,
-        "average_time_gap_between_appearances": 2.25
-    },
-    {
-        "Qid": 47,
-        "question_text": "Compute the post fix equivalent of the following expression. 3 * log(x+1) - a/2",
-        "A": "3x1 + log*a2/-",
-        "B": "3x1 + log*a2-/",
-        "C": "3+1 * log*a2/-",
-        "D": "3+1 - log*a2/x",
-        "correct_option": [
-            "A"
-        ],
-        "current_year": 1998,
-        "difficulty_level": "Medium",
-        "marks": 2,
-        "tags": "Stacks and Queues",
-        "years_since_last_appearance": 1,
-        "appeared_in_next_exam": 1,
-        "number_of_times_appeared": 1,
-        "total_years_since_first_appearance": 27,
-        "average_time_gap_between_appearances": 2.25
-    },
-    {
-        "Qid": 48,
-        "question_text": "A priority queue Q is used to implement a stack that stores characters. PUSH (C) is implemented INSERT (Q, C, K) where K is an appropriate integer key chosen by the implementation. POP is implemented as DELETEMIN(Q). For a sequence of operations, the keys chosen are in",
-        "A": "non-increasing order",
-        "B": "non-decreasing order",
-        "C": "strictly increasing order",
-        "D": "strivtly decreasing order",
-        "correct_option": [
-            "A"
-        ],
-        "current_year": 1997,
-        "difficulty_level": "Medium",
-        "marks": 2,
-        "tags": "Stacks and Queues",
-        "years_since_last_appearance": 1,
-        "appeared_in_next_exam": 1,
-        "number_of_times_appeared": 1,
-        "total_years_since_first_appearance": 27,
-        "average_time_gap_between_appearances": 2.25
-    },
-    {
-        "Qid": 49,
-        "question_text": "The postfix expression for the infix expression A + B * (C + D) / F + D * E is:",
-        "A": "AB+CD+*F/D+E*",
-        "B": "ABCD+*F/+DE*+",
-        "C": "A*B+CD/F*DE++",
-        "D": "A+*BCD/F*DE++",
-        "correct_option": [
-            "b"
-        ],
-        "current_year": 1995,
-        "difficulty_level": "Medium",
-        "marks": 2,
-        "tags": "Stacks and Queues",
-        "years_since_last_appearance": 1,
-        "appeared_in_next_exam": 1,
-        "number_of_times_appeared": 1,
-        "total_years_since_first_appearance": 27,
-        "average_time_gap_between_appearances": 2.25
-    },
-    {
-        "Qid": 50,
-        "question_text": "Which of the following permutations can be obtained in the output (in the same order) using a stack assuming that the input is the sequence 1, 2, 3, 4, 5 in that order?",
-        "A": "34512",
-        "B": "34521",
-        "C": "15234",
-        "D": "54312",
-        "correct_option": [
-            "B"
-        ],
-        "current_year": 1994,
-        "difficulty_level": "Medium",
-        "marks": 2,
-        "tags": "Stacks and Queues",
-        "years_since_last_appearance": 1,
-        "appeared_in_next_exam": 1,
-        "number_of_times_appeared": 1,
-        "total_years_since_first_appearance": 27,
-        "average_time_gap_between_appearances": 2.25
-    },
-    {
-        "Qid": 51,
-        "question_text": "The following sequence of operations is performed on stack: PUSH (10),PUSH (20),POP,PUSH (10),PUSH (20),POP,POP,POP,PUSH (20),POP The sequence of the value popped out is:",
-        "A": "20,10,20,10,20",
-        "B": "20,20,10,10,20",
-        "C": "10,20,20,10,20",
-        "D": "20,20,10,20,10",
-        "correct_option": [
-            "B"
-        ],
-        "current_year": 1991,
-        "difficulty_level": "Medium",
-        "marks": 2,
-        "tags": "Stacks and Queues",
         "years_since_last_appearance": 1,
         "appeared_in_next_exam": 1,
         "number_of_times_appeared": 1,
@@ -1634,25 +1632,5 @@
         "number_of_times_appeared": 1,
         "total_years_since_first_appearance": 20,
         "average_time_gap_between_appearances": 1.47
-    },
-    {
-        "Qid": 83,
-        "question_text": "The number of internal nodes of a rooted tree with n nodes, n>1, is",
-        "A": "n-1",
-        "B": "n",
-        "C": "n+1",
-        "D": "n/2",
-        "correct_option": [
-            "A"
-        ],
-        "current_year": 1990,
-        "difficulty_level": "Medium",
-        "marks": 2,
-        "tags": "Tree",
-        "years_since_last_appearance": 1,
-        "appeared_in_next_exam": 1,
-        "number_of_times_appeared": 1,
-        "total_years_since_first_appearance": 27,
-        "average_time_gap_between_appearances": 2.25
     }
 ]
