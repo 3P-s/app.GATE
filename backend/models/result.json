@@ -1,0 +1,132 @@
+{
+    "piechart": {
+        "report": {
+            "test1": {
+                "chart": [
+                    [
+                        "Topic",
+                        "Value"
+                    ],
+                    [
+                        "correctAnswers",
+                        5
+                    ],
+                    [
+                        "wrongAnswers",
+                        3
+                    ],
+                    [
+                        "unattemptedQuestion",
+                        2
+                    ]
+                ],
+                "title": "Test 1 Result",
+                "other": [
+                    [
+                        "noOfQuestions",
+                        10
+                    ],
+                    [
+                        "marks",
+                        7
+                    ]
+                ]
+            },
+            "test2": {
+                "chart": [
+                    [
+                        "Topic",
+                        "integer"
+                    ],
+                    [
+                        "correctAnswers",
+                        8
+                    ],
+                    [
+                        "wrongAnswers",
+                        2
+                    ],
+                    [
+                        "unattemptedQuestion",
+                        0
+                    ]
+                ],
+                "title": "Test 2 Result",
+                "other": [
+                    [
+                        "noOfQuestions",
+                        10
+                    ],
+                    [
+                        "marks",
+                        7
+                    ]
+                ]
+            }
+        }
+    },
+    "barchart": {
+        "report": {
+            "test1": [
+                [
+                    "Topic",
+                    "Value"
+                ],
+                [
+                    "Stacks and Queues",
+                    250
+                ],
+                [
+                    "Graph",
+                    4200
+                ],
+                [
+                    "Array",
+                    2900
+                ],
+                [
+                    "Linkedlist",
+                    8200
+                ],
+                [
+                    "Hashing",
+                    8200
+                ],
+                [
+                    "Tree",
+                    8200
+                ]
+            ],
+            "test2": [
+                [
+                    "Topic",
+                    "integer"
+                ],
+                [
+                    "Stacks and Queues",
+                    250
+                ],
+                [
+                    "Graph",
+                    4200
+                ],
+                [
+                    "Array",
+                    2900
+                ],
+                [
+                    "Linkedlist",
+                    8200
+                ],
+                [
+                    "Hashing",
+                    8200
+                ],
+                [
+                    "Tree",
+                    8200
+                ]
+            ]
+        }
+    }
+}
