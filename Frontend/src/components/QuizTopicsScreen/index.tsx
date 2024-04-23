@@ -88,11 +88,11 @@ const QuizTopicsScreen: React.FC = () => {
   return (
     <PageCenter light justifyCenter>
       <CenterCardContainer>
-        <LogoContainer>
+        {/* <LogoContainer>
           <AppLogo />
-        </LogoContainer>
+        </LogoContainer> */}
         <Heading>
-          WELCOME TO <HighlightedText> XEVEN QUIZ</HighlightedText>
+          WELCOME TO <HighlightedText> app.GATE() </HighlightedText>
         </Heading>
         <DetailText>Select topic below to start your Quiz.</DetailText>
         <SelectButtonContainer>

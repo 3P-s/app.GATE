@@ -1,4 +1,4 @@
-import styled, { createGlobalStyle, css } from 'styled-components'
+import styled, { createGlobalStyle, css } from 'styled-components'  
 import { device } from './BreakPoints'
 import fontsCss from './fonts.module.css'
 
