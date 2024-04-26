@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "pandas-js": "^0.2.4",
+    "python-shell": "^5.0.0"
+  }
+}

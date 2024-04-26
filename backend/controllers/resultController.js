@@ -1,10 +1,13 @@
 import result from '../models/result.js';
+import { PythonShell } from 'python-shell'
 
 
 // COntroller for half test given by user
 const getRecommendations = async (req, res) => {
     try {
+        const ps = new PythonShell('./controllers/model.py');
         const questions = req.body.questions;
+        var high_prob = [], low_prob = [];
         var attempted = 0, correct = 0, total = questions.length, marks = 0;
         var tags = {
             "Stacks and Queues": 0,
@@ -15,17 +18,30 @@ const getRecommendations = async (req, res) => {
             "Tree": 0
         }
 
-        questions.map((question) => {
+        const sleep = ms => new Promise(resolve => setTimeout(resolve, ms))
+
+        for(let i = 0;i < total;i++){
+            const question = questions[i];
             if (question.selectedOption !== undefined) {
                 attempted++;
                 if (question.selectedOption === question.correct_option) {
                     correct++;
                     marks += question.marks;
                 }
+                else {
+                    ps.send(`${question.current_year} ${question.difficulty_level} ${question.tags} ${question.number_of_times_appeared} ${question.average_time_gap_between_appearances} ${question.years_since_last_appearance} ${question.total_years_since_first_appearance}`)
+                    ps.on('message', async function (message) {
+                        // console.log(message)
+                        if (message[1] == '1') {
+                            high_prob.push(question.tags)
+                        }
+                        else {
+                            low_prob.push(question.tags)
+                        }
+                    });
+                }
             }
-
-            tags[question.tag] += 1;
-        })
+        }
 
         const result = {
             "partial": 1,
@@ -162,7 +178,10 @@ const getRecommendations = async (req, res) => {
 
         }
 
-        res.send(result);
+        sleep(3000).then(() => {
+            res.send([result, high_prob, low_prob]);
+        })
+
     }
     catch (error) {
         console.log(error)
@@ -340,17 +359,17 @@ const getResults = async (req, res) => {
 }
 
 // Gett all results separate by test
-const getAllResults = async (req, res) =>{
-    try{
+const getAllResults = async (req, res) => {
+    try {
         const results = await result.find();
 
         var partial = [], full = [];
-        
+
         results.map((result) => {
-            if(result.partial === 0){
+            if (result.partial === 0) {
                 full.push(result)
             }
-            else{
+            else {
                 partial.push(result)
             }
         })
@@ -360,7 +379,7 @@ const getAllResults = async (req, res) =>{
             full
         })
     }
-    catch(error){
+    catch (error) {
         console.log(error);
     }
 }
