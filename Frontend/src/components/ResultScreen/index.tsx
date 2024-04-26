@@ -1,6 +1,5 @@
-import { FC } from 'react'
+import { FC, useState } from 'react'
 import styled, { css } from 'styled-components'
-
 import { AppLogo, Refresh } from '../../config/icons'
 import { useQuiz } from '../../context/QuizContext'
 import { device } from '../../styles/BreakPoints'
@@ -8,8 +7,6 @@ import { Flex, LogoContainer, ResizableBox } from '../../styles/Global'
 import { refreshPage } from '../../utils/helpers'
 
 import Button from '../ui/Button'
-import CodeSnippet from '../ui/CodeSnippet'
-import QuizImage from '../ui/QuizImage'
 import ResultOverview from './ResultOverview'
 import RightAnswer from './RightAnswer'
 
@@ -120,9 +117,15 @@ const Score = styled.span<{ right: boolean }>`
 
 const ResultScreen: FC = () => {
   const { result } = useQuiz()
+  const [report,setReport] = useState({})
 
+  
   const onClickRetry = () => {
     refreshPage()
+  }
+  const onClickShowReport = () => {
+
+    console.log('Show Report')
   }
 
   return (
@@ -135,35 +138,40 @@ const ResultScreen: FC = () => {
         {result.map(
           (
             {
-              question,
+              question_text,
               choices,
-              code,
-              image,
-              correctAnswers,
+              type,
+              correct_option,
+              marks,
+              tags,
+              appeared_in_next_exam,
+              number_of_times_appeared,
+              average_time_gap_between_appearances,
+              current_year,
+              difficulty_level,
+              years_since_last_appearance,
+              total_years_since_first_appearance,
               selectedAnswer,
-              score,
               isMatch,
             },
             index: number
           ) => {
             return (
-              <QuestionContainer key={question}>
+              <QuestionContainer key={question_text}>
                 <ResizableBox width="90%">
                   <Flex gap="4px">
                     <QuestionNumber>{`${index + 1}. `}</QuestionNumber>
-                    <QuestionStyle>{question}</QuestionStyle>
+                    <QuestionStyle>{question_text}</QuestionStyle>
                   </Flex>
                   <div>
-                    {code && <CodeSnippet code={code} language="javascript" />}
-                    {image && <QuizImage image={image} />}
                     <ul>
                       {choices.map((ans: string, index: number) => {
                         // Convert index to alphabet character
                         const label = String.fromCharCode(65 + index)
                         const correct =
-                          selectedAnswer.includes(ans) && correctAnswers.includes(ans)
+                          selectedAnswer.includes(ans) && correct_option.includes(ans)
                         const wrong =
-                          selectedAnswer.includes(ans) && !correctAnswers.includes(ans)
+                          selectedAnswer.includes(ans) && !correct_option.includes(ans)
 
                         return (
                           <Answer key={ans} correct={correct} wrong={wrong}>
@@ -175,17 +183,23 @@ const ResultScreen: FC = () => {
                     </ul>
                     {/* only show if the answer is wrong */}
                     {!isMatch && (
-                      <RightAnswer correctAnswers={correctAnswers} choices={choices} />
+                      <RightAnswer correctAnswers={correct_option} choices={choices} />
                     )}
                   </div>
                 </ResizableBox>
-                <Score right={isMatch}>{`Score ${isMatch ? score : 0}`}</Score>
+                <Score right={isMatch}>{`Score ${isMatch ? marks : 0}`}</Score>
               </QuestionContainer>
             )
           }
         )}
       </InnerContainer>
-      <Flex flxEnd>
+      <Flex spaceBetween>
+        <Button
+          text="Show Report"
+          onClick={onClickShowReport}
+          iconPosition="left"
+          bold
+        />
         <Button
           text="RETRY"
           onClick={onClickRetry}
@@ -194,6 +208,7 @@ const ResultScreen: FC = () => {
           bold
         />
       </Flex>
+      
     </ResultScreenContainer>
   )
 }

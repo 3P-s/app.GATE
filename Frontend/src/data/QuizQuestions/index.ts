@@ -1,7 +1,7 @@
 import { test1 } from './test1'
-import { javascript } from './javascript'
-import { python } from './python'
-import { react } from './react'
+// import { javascript } from './javascript'
+// import { python } from './python'
+// import { react } from './react'
 
 // Question Types
 // 1. MCQs | Multiple Choice | single
@@ -12,13 +12,22 @@ type Choice = string
 type CorrectAnswers = string[]
 
 export type Question = {
-  question: string
+  question_text: string
   choices: Choice[]
   type: 'MCQs' | 'MAQs' | 'boolean'
-  correctAnswers: CorrectAnswers
-  score: number
+  correct_option: CorrectAnswers
+  marks: number
   code?: string
   image?: string
+  tags?: string[]
+  appeared_in_next_exam?: number
+  number_of_times_appeared?: number
+  average_time_gap_between_appearances?: number
+  current_year?: number
+  difficulty_level?: string
+  years_since_last_appearance?:number
+  total_years_since_first_appearance?:number
+  selectedOption?: string
 }
 
 export type Topic = {
@@ -28,11 +37,9 @@ export type Topic = {
   totalScore: number
   totalTime: number
   questions: Question[]
+
 }
 
 export const quiz: Record<string, Topic> = {
-  JavaScript: javascript,
-  React: react,
-  Python: python,
   Test1: test1,
 }

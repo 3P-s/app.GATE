@@ -40,12 +40,16 @@ const QuizContainer = styled.div<{ selectedAnswer: boolean }>`
 const LogoContainer = styled.div`
   margin-top: 50px;
   margin-bottom: 50px;
+  svg {
+    width: 250px;
+    height: 110px;
+  }
   @media ${device.md} {
     margin-top: 10px;
     margin-bottom: 20px;
     svg {
       width: 185px;
-      height: 80px;
+      height: 50px;
     }
   }
 `
@@ -82,12 +86,12 @@ const QuestionScreen: FC = () => {
 
   const currentQuestion = questions[activeQuestion]
 
-  const { question, type, choices, code, image, correctAnswers } = currentQuestion
+  const { question_text, type, choices, code, image, correct_option } = currentQuestion
 
   const onClickNext = () => {
     const isMatch: boolean =
-      selectedAnswer.length === correctAnswers.length &&
-      selectedAnswer.every((answer) => correctAnswers.includes(answer))
+      selectedAnswer.length === correct_option.length &&
+      selectedAnswer.every((answer) => correct_option.includes(answer))
 
     // adding selected answer, and if answer matches key to result array with current question
     setResult([...result, { ...currentQuestion, selectedAnswer, isMatch }])
@@ -100,6 +104,8 @@ const QuestionScreen: FC = () => {
       setEndTime(timeTaken)
       setShowResultModal(true)
     }
+    console.log('Result', result);
+    
     setSelectedAnswer([])
   }
 
@@ -150,9 +156,7 @@ const QuestionScreen: FC = () => {
           timer={timer}
         />
         <Question
-          question={question}
-          code={code}
-          image={image}
+          question={question_text}
           choices={choices}
           type={type}
           handleAnswerSelection={handleAnswerSelection}

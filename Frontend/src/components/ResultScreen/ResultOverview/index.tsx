@@ -1,6 +1,7 @@
 import { FC } from 'react'
 import styled from 'styled-components'
 
+import {test1} from '../../../data/QuizQuestions/test1'
 import { useQuiz } from '../../../context/QuizContext'
 import { device } from '../../../styles/BreakPoints'
 import { HighlightedText } from '../../../styles/Global'
@@ -25,13 +26,20 @@ interface ResultOverviewProps {
 }
 
 const ResultOverview: FC<ResultOverviewProps> = ({ result }) => {
+  const qbody=test1.questions;
+  console.log('ResultOverview', result);
+  for (let i = 0; i < qbody.length; i++) {
+    qbody[i].selectedOption = result[i].selectedAnswer[0];
+  }
+  console.log('qbody', qbody);
+  
   const { quizDetails, endTime } = useQuiz()
 
   const totalQuestionAttempted = result.length
 
   const obtainedScore = result
-    .filter((item) => item.isMatch && typeof item.score === 'number')
-    .reduce((accumulator, currentValue) => accumulator + (currentValue.score || 0), 0)
+    .filter((item) => item.isMatch && typeof item.marks === 'number')
+    .reduce((accumulator, currentValue) => accumulator + (currentValue.marks || 0), 0)
 
   // Passed if 60 or more than 60% marks
   const calculateStatus =

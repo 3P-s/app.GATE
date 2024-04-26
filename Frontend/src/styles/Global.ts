@@ -207,7 +207,7 @@ export const LogoContainer = styled.div`
     margin-bottom: 30px;
   }
   svg {
-    width: 220px;
+    width: 400px;
     rect {
       stroke: ${({ theme }) => theme.colors.appLogo};
     }
