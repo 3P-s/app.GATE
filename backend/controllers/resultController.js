@@ -24,22 +24,23 @@ const getRecommendations = async (req, res) => {
             const question = questions[i];
             if (question.selectedOption !== undefined) {
                 attempted++;
-                if (question.selectedOption === question.correct_option) {
+                if (question.selectedOption === question.correct_option[0]) {
                     correct++;
                     marks += question.marks;
                 }
                 else {
-                    ps.send(`${question.current_year} ${question.difficulty_level} ${question.tags} ${question.number_of_times_appeared} ${question.average_time_gap_between_appearances} ${question.years_since_last_appearance} ${question.total_years_since_first_appearance}`)
+                    ps.send(`${question.current_year} ${question.difficulty_level} ${question.tags[0]} ${question.number_of_times_appeared} ${question.average_time_gap_between_appearances} ${question.years_since_last_appearance} ${question.total_years_since_first_appearance}`)
                     ps.on('message', async function (message) {
                         if (message[1] == '1') {
-                            high_prob.push(question.tags)
+                            high_prob.push(question.tags[0])
                         }
                         else {
-                            low_prob.push(question.tags)
+                            low_prob.push(question.tags[0])
                         }
                     });
                 }
             }
+            tags[question.tags[0]] += 1;
         }
 
         const result = {
@@ -207,13 +208,13 @@ const getResults = async (req, res) => {
         questions.map((question) => {
             if (question.selectedOption !== undefined) {
                 attempted++;
-                if (question.selectedOption === question.correct_option) {
+                if (question.selectedOption === question.correct_option[0]) {
                     correct++;
                     marks += question.marks;
                 }
             }
 
-            tags[question.tag] += 1;
+            tags[question.tags[0]] += 1;
         })
 
         const result = {

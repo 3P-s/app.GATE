@@ -10,13 +10,14 @@ type QuizProviderProps = {
 const QuizProvider = ({ children }: QuizProviderProps) => {
   const [timer, setTimer] = useState<number>(initialState.timer)
   const [endTime, setEndTime] = useState<number>(initialState.endTime)
-  const [quizTopic, setQuizTopic] = useState<string>(initialState.quizTopic)
+  const [quizTopic, setQuizTopic] = useState<string>('Test1')
   const [result, setResult] = useState<Result[]>(initialState.result)
   const [currentScreen, setCurrentScreen] = useState<ScreenTypes>(
     initialState.currentScreen
   )
-
-  const [questions, setQuestions] = useState(quiz[initialState.quizTopic].questions)
+  // console.log(quiz['Test1'].questions);
+  
+  const [questions, setQuestions] = useState(quiz[quizTopic].questions)
 
   const {
     questions: quizQuestions,

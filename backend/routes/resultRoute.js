@@ -3,8 +3,8 @@ import { getResults, getRecommendations, getAllResults } from '../controllers/re
 
 const resultRoutes = express.Router();
 
-resultRoutes.post('/analyse', getResults);
-resultRoutes.put('/recommend', getRecommendations);
+resultRoutes.put('/analyse', getResults);
+resultRoutes.post('/recommend', getRecommendations);
 resultRoutes.get('/all', getAllResults);
 
 export default resultRoutes;
