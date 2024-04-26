@@ -1,5 +1,5 @@
-import result from '../models/result.js';
-import { PythonShell } from 'python-shell'
+import Result from '../models/result.js';
+import { PythonShell } from 'python-shell';
 
 
 // COntroller for half test given by user
@@ -20,7 +20,7 @@ const getRecommendations = async (req, res) => {
 
         const sleep = ms => new Promise(resolve => setTimeout(resolve, ms))
 
-        for(let i = 0;i < total;i++){
+        for (let i = 0; i < total; i++) {
             const question = questions[i];
             if (question.selectedOption !== undefined) {
                 attempted++;
@@ -31,7 +31,6 @@ const getRecommendations = async (req, res) => {
                 else {
                     ps.send(`${question.current_year} ${question.difficulty_level} ${question.tags} ${question.number_of_times_appeared} ${question.average_time_gap_between_appearances} ${question.years_since_last_appearance} ${question.total_years_since_first_appearance}`)
                     ps.on('message', async function (message) {
-                        // console.log(message)
                         if (message[1] == '1') {
                             high_prob.push(question.tags)
                         }
@@ -177,6 +176,8 @@ const getRecommendations = async (req, res) => {
             }
 
         }
+
+        Result.create(result);
 
         sleep(3000).then(() => {
             res.send([result, high_prob, low_prob]);
@@ -361,7 +362,7 @@ const getResults = async (req, res) => {
 // Gett all results separate by test
 const getAllResults = async (req, res) => {
     try {
-        const results = await result.find();
+        const results = await Result.find();
 
         var partial = [], full = [];
 
