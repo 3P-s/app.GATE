@@ -31,7 +31,6 @@ const ResultOverview: FC<ResultOverviewProps> = ({ result }) => {
   for (let i = 0; i < qbody.length; i++) {
     qbody[i].selectedOption = result[i].selectedAnswer[0];
   }
-  console.log('qbody', qbody);
   
   const { quizDetails, endTime } = useQuiz()
 

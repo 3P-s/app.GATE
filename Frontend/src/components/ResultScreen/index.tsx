@@ -117,9 +117,6 @@ const Score = styled.span<{ right: boolean }>`
 
 const ResultScreen: FC = () => {
   const { result } = useQuiz()
-  const [report,setReport] = useState({})
-
-  
   const onClickRetry = () => {
     refreshPage()
   }
