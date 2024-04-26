@@ -5,10 +5,12 @@ import { useQuiz } from '../../context/QuizContext'
 import { device } from '../../styles/BreakPoints'
 import { Flex, LogoContainer, ResizableBox } from '../../styles/Global'
 import { refreshPage } from '../../utils/helpers'
-
+import axios from 'axios'
 import Button from '../ui/Button'
 import ResultOverview from './ResultOverview'
 import RightAnswer from './RightAnswer'
+import { Link } from 'react-router-dom'
+import { Chart } from "react-google-charts";
 
 const ResultScreenContainer = styled.div`
   max-width: 900px;
@@ -116,98 +118,135 @@ const Score = styled.span<{ right: boolean }>`
 `
 
 const ResultScreen: FC = () => {
+  const [report, setReport] = useState();
   const { result } = useQuiz()
   const onClickRetry = () => {
     refreshPage()
   }
-  const onClickShowReport = () => {
+  const [bar, setBar] = useState({})
+  const [pie, setPie] = useState()
+  const onClickShowReport = async () => {
+    console.log('button clicked');
 
-    console.log('Show Report')
+    // create put req to localhost:5000/result/recommend 
+    const response = await axios.post('http://localhost:5000/result/recommend', {
+      'questions': result
+    })
+    console.log('report fetched');
+    console.log(response.data[0]);
+    setReport(response.data[0])
+    console.log(response.data[0].barchart)
+    setBar(response.data[0].barchart.report.test1)
+    setPie(response.data[0].piechart.report.test1)
   }
-
   return (
-    <ResultScreenContainer>
-      <LogoContainer>
-        <AppLogo />
-      </LogoContainer>
-      <InnerContainer>
-        <ResultOverview result={result} />
-        {result.map(
-          (
-            {
-              question_text,
-              choices,
-              type,
-              correct_option,
-              marks,
-              tags,
-              appeared_in_next_exam,
-              number_of_times_appeared,
-              average_time_gap_between_appearances,
-              current_year,
-              difficulty_level,
-              years_since_last_appearance,
-              total_years_since_first_appearance,
-              selectedAnswer,
-              isMatch,
-            },
-            index: number
-          ) => {
-            return (
-              <QuestionContainer key={question_text}>
-                <ResizableBox width="90%">
-                  <Flex gap="4px">
-                    <QuestionNumber>{`${index + 1}. `}</QuestionNumber>
-                    <QuestionStyle>{question_text}</QuestionStyle>
-                  </Flex>
-                  <div>
-                    <ul>
-                      {choices.map((ans: string, index: number) => {
-                        // Convert index to alphabet character
-                        const label = String.fromCharCode(65 + index)
-                        const correct =
-                          selectedAnswer.includes(ans) && correct_option.includes(ans)
-                        const wrong =
-                          selectedAnswer.includes(ans) && !correct_option.includes(ans)
+    <>
+      {report === undefined ? (
+        <ResultScreenContainer>
+          <LogoContainer>
+            <AppLogo />
+          </LogoContainer>
+          <InnerContainer>
+            <ResultOverview result={result} />
+            {result.map(
+              (
+                {
+                  question_text,
+                  choices,
+                  type,
+                  correct_option,
+                  marks,
+                  tags,
+                  appeared_in_next_exam,
+                  number_of_times_appeared,
+                  average_time_gap_between_appearances,
+                  current_year,
+                  difficulty_level,
+                  years_since_last_appearance,
+                  total_years_since_first_appearance,
+                  selectedAnswer,
+                  isMatch,
+                },
+                index
+              ) => (
+                <QuestionContainer key={question_text}>
+                  <ResizableBox width="90%">
+                    <Flex gap="4px">
+                      <QuestionNumber>{`${index + 1}. `}</QuestionNumber>
+                      <QuestionStyle>{question_text}</QuestionStyle>
+                    </Flex>
+                    <div>
+                      <ul>
+                        {choices.map((ans, index) => {
+                          // Convert index to alphabet character
+                          const label = String.fromCharCode(65 + index);
+                          const correct =
+                            selectedAnswer.includes(ans) &&
+                            correct_option.includes(ans);
+                          const wrong =
+                            selectedAnswer.includes(ans) &&
+                            !correct_option.includes(ans);
 
-                        return (
-                          <Answer key={ans} correct={correct} wrong={wrong}>
-                            <span>{label}.</span>
-                            {ans}
-                          </Answer>
-                        )
-                      })}
-                    </ul>
-                    {/* only show if the answer is wrong */}
-                    {!isMatch && (
-                      <RightAnswer correctAnswers={correct_option} choices={choices} />
-                    )}
-                  </div>
-                </ResizableBox>
-                <Score right={isMatch}>{`Score ${isMatch ? marks : 0}`}</Score>
-              </QuestionContainer>
-            )
-          }
-        )}
-      </InnerContainer>
-      <Flex spaceBetween>
-        <Button
-          text="Show Report"
-          onClick={onClickShowReport}
-          iconPosition="left"
-          bold
-        />
-        <Button
-          text="RETRY"
-          onClick={onClickRetry}
-          icon={<Refresh />}
-          iconPosition="left"
-          bold
-        />
-      </Flex>
-      
-    </ResultScreenContainer>
-  )
+                          return (
+                            <Answer key={ans} correct={correct} wrong={wrong}>
+                              <span>{label}.</span>
+                              {ans}
+                            </Answer>
+                          );
+                        })}
+                      </ul>
+                      {/* only show if the answer is wrong */}
+                      {!isMatch && (
+                        <RightAnswer
+                          correctAnswers={correct_option}
+                          choices={choices}
+                        />
+                      )}
+                    </div>
+                  </ResizableBox>
+                  <Score right={isMatch}>{`Score ${isMatch ? marks : 0}`}</Score>
+                </QuestionContainer>
+              )
+            )}
+          </InnerContainer>
+          <Flex spaceBetween>
+            <Button
+              text="Show Report"
+              onClick={onClickShowReport}
+              iconPosition="left"
+              bold
+            />
+            <Button
+              text="RETRY"
+              onClick={onClickRetry}
+              icon={<Refresh />}
+              iconPosition="left"
+              bold
+            />
+          </Flex>
+        </ResultScreenContainer>
+      ) : (
+        <>
+          <Chart
+            chartType="BarChart"
+            width="100%"
+            height="400px"
+            data={bar}
+            options={{
+              title: 'Bar Chart',
+              chartArea: { width: '50%' },
+              hAxis: {
+                title: 'Incorrect tags',
+                minValue: 0,
+              },
+              vAxis: {
+                title: 'Tags',
+              },
+            }}
+          />
+        </>
+      )}
+    </>
+  );
 }
-
 export default ResultScreen
