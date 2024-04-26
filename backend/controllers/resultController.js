@@ -38,9 +38,9 @@ const getRecommendations = async (req, res) => {
                             low_prob.push(question.tags[0])
                         }
                     });
+                    tags[question.tags[0]] += 1;
                 }
             }
-            tags[question.tags[0]] += 1;
         }
 
         const result = {
