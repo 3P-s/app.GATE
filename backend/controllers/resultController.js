@@ -22,9 +22,9 @@ const getRecommendations = async (req, res) => {
 
         for (let i = 0; i < total; i++) {
             const question = questions[i];
-            if (question.selectedAnswers[0] !== undefined) {
+            if (question.selectedAnswer[0] !== undefined) {
                 attempted++;
-                if (question.selectedAnswers[0] === question.correct_option[0]) {
+                if (question.selectedAnswer[0] === question.correct_option[0]) {
                     correct++;
                     marks += question.marks;
                 }
@@ -206,9 +206,9 @@ const getResults = async (req, res) => {
         }
 
         questions.map((question) => {
-            if (question.selectedAnswers[0] !== undefined) {
+            if (question.selectedAnswer[0] !== undefined) {
                 attempted++;
-                if (question.selectedAnswers[0] === question.correct_option[0]) {
+                if (question.selectedAnswer[0] === question.correct_option[0]) {
                     correct++;
                     marks += question.marks;
                 }
