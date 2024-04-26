@@ -107,7 +107,7 @@ const getRecommendations = async (req, res) => {
                                 "marks",
                                 -1
                             ]
-                        ]
+                        ],
                     }
                 }
             },
