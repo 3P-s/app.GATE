@@ -318,23 +318,19 @@ const ResultScreen: FC = () => {
             />
           </div>
           <div style={{ margin: "100px" }}>
-            Recomandations
-            <div >
-              {Object.keys(recom).map((key) => {
-                return (
-                  <div key={key}>
-                    <h1 className='flex'>{key}</h1>
-                    {recom[key].map((value) => {
-                      return (
-                        <div key={value} className='flex'>
-                          <a href={value} className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Link</a>
-                        </div>
-                      );
-                    })}
-                  </div>
-                );
-              })}
-            </div>
+            <h1>Recommendations</h1>
+            {Object.keys(recom).map((key) => (
+              <div key={key}>
+                <h2 className='my-5'>{key}</h2>
+                <div className="flex flex-wrap">
+                  {recom[key].map((value, index) => (
+                    <div key={index} className="mr-2 mb-2">
+                      <a href={value} className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Link</a>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ))}
           </div>
         </>
       )}
