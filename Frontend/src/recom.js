@@ -1,5 +1,4 @@
-{
-    
+const recom = {
     "Stacks and Queues":[
         "https://www.youtube.com/watch?v=-n2rVJE4vto",
         "https://www.andrew.cmu.edu/course/15-121/lectures/Stacks%20and%20Queues/Stacks%20and%20Queues.html",
@@ -37,3 +36,4 @@
         "https://leetcode.com/problemset/?topicSlugs=tree&page=1"
     ]
 }
+export default recom;

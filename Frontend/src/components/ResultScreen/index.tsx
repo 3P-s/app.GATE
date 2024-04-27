@@ -11,7 +11,8 @@ import ResultOverview from './ResultOverview'
 import RightAnswer from './RightAnswer'
 import { Link } from 'react-router-dom'
 import { Chart } from "react-google-charts";
-
+import { title } from 'process'
+import recom from '../../recom'
 const ResultScreenContainer = styled.div`
   max-width: 900px;
   margin: 60px auto;
@@ -119,12 +120,12 @@ const Score = styled.span<{ right: boolean }>`
 
 const ResultScreen: FC = () => {
   const [report, setReport] = useState();
+  const [rec, setRec] = useState()
   const { result } = useQuiz()
   const onClickRetry = () => {
     refreshPage()
   }
   const [bar, setBar] = useState({})
-  const [pie, setPie] = useState()
   const onClickShowReport = async () => {
     console.log('button clicked');
 
@@ -132,12 +133,53 @@ const ResultScreen: FC = () => {
     const response = await axios.post('http://localhost:5000/result/recommend', {
       'questions': result
     })
-    console.log('report fetched');
-    console.log(response.data[0]);
     setReport(response.data[0])
-    console.log(response.data[0].barchart)
     setBar(response.data[0].barchart.report.test1)
-    setPie(response.data[0].piechart.report.test1)
+    const store = response.data[0].barchart.report.test1;
+    console.log(response.data[0].barchart.report.test1);
+    let newRecom = [];
+  }
+
+  interface Recom {
+    [key: string]: string[];
+  }
+  const recom: Recom = {
+    "Stacks and Queues": [
+      "https://www.youtube.com/watch?v=-n2rVJE4vto",
+      "https://www.andrew.cmu.edu/course/15-121/lectures/Stacks%20and%20Queues/Stacks%20and%20Queues.html",
+      "https://www.youtube.com/playlist?list=PLDzeHZWIZsTrhXYYtx4z8-u8zA-DzuVsj",
+      "https://www.javatpoint.com/ds-stack-vs-queue"
+    ],
+    "Graph": [
+      "https://www.javatpoint.com/ds-graph",
+      "https://www.youtube.com/playlist?list=PLgUwDviBIf0oE3gA41TKO2H5bHpPd7fzn",
+      "https://www.youtube.com/playlist?list=PLDzeHZWIZsTobi35C3I-tKB3tRDX6YxuA",
+      "https://www.javatpoint.com/graph-theory-in-discrete-mathematics"
+    ],
+    "Array": [
+      "https://www.youtube.com/playlist?list=PLgUwDviBIf0rENwdL0nEH0uGom9no0nyB",
+      "https://leetcode.com/problemset/?topicSlugs=array&page=1"
+    ],
+    "Linked List": [
+      "https://www.youtube.com/playlist?list=PLDzeHZWIZsTr54_TH_NK4ibFojS4mmQA6",
+      "https://www.geeksforgeeks.org/data-structures/linked-list/",
+      "https://leetcode.com/problemset/?page=1&topicSlugs=linked-list"
+
+    ],
+    "Hashing": [
+      "https://www.youtube.com/watch?v=W5q0xgxmRd8",
+      "https://www.geeksforgeeks.org/hashing-data-structure/",
+      "https://www.geeksforgeeks.org/hashing-in-java/",
+      "https://leetcode.com/problemset/?topicSlugs=hash-table&page=1"
+    ],
+    "Tree": [
+      "https://www.youtube.com/playlist?list=PLkjdNRgDmcc0Pom5erUBU4ZayeU9AyRRu",
+      "https://www.youtube.com/watch?v=YAdLFsTG70w",
+      "https://www.geeksforgeeks.org/introduction-to-tree-data-structure-and-algorithm-tutorials/",
+      "https://www.w3schools.com/dsa/dsa_theory_trees.php",
+      "https://www.youtube.com/playlist?list=PLkIpj7mL1E7sgSzwlAxM6TfS_WJ529O7y",
+      "https://leetcode.com/problemset/?topicSlugs=tree&page=1"
+    ]
   }
   return (
     <>
@@ -227,26 +269,90 @@ const ResultScreen: FC = () => {
         </ResultScreenContainer>
       ) : (
         <>
-          <Chart
-            chartType="BarChart"
-            width="100%"
-            height="400px"
-            data={bar}
-            options={{
-              title: 'Bar Chart',
-              chartArea: { width: '50%' },
-              hAxis: {
-                title: 'Incorrect tags',
-                minValue: 0,
-              },
-              vAxis: {
-                title: 'Tags',
-              },
-            }}
-          />
+
+          <div style={{ margin: "150px" }}>
+            <h1>Barchart</h1>
+            <Chart
+              chartType="BarChart"
+              width="100%"
+              height="400px"
+              data={bar}
+              options={{
+                title: 'Bar Chart',
+                chartArea: { width: '50%' },
+                hAxis: {
+                  title: 'Incorrect Questions',
+                  minValue: 0,
+                },
+                vAxis: {
+                  title: 'Tags',
+                },
+              }}
+            />
+          </div>
+          <div className='piechart' style={{ margin: "100px" }}>
+            <h1>PieChart</h1>
+            <Chart
+              chartType="PieChart"
+              data={bar}
+              options={{
+                title: 'Pie Chart`',
+                is3D: true,
+              }
+              }
+              width={"100%"}
+              height={"400px"}
+            />
+          </div>
+          <div className='piechart' style={{ margin: "100px" }}>
+            <h1>Differnce</h1>
+            <Chart
+              chartType="BarChart"
+              width="100%"
+              height="400px"
+              diffdata={{
+                old: bar,
+                new: dataNew,
+              }}
+              options={options}
+            />
+          </div>
+          <div style={{ margin: "100px" }}>
+            Recomandations
+            <div >
+              {Object.keys(recom).map((key) => {
+                return (
+                  <div key={key}>
+                    <h1 className='flex'>{key}</h1>
+                    {recom[key].map((value) => {
+                      return (
+                        <div key={value} className='flex'>
+                          <a href={value} className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Link</a>
+                        </div>
+                      );
+                    })}
+                  </div>
+                );
+              })}
+            </div>
+          </div>
         </>
       )}
     </>
   );
 }
+
+const dataNew = [
+  ['Tag', 'Count'],
+  ['Stacks and Queues', 0],
+  ['Graph', 0],
+  ['Array', 4],
+  ['Linked List', 0],
+  ['Hashing', 1],
+  ['Tree', 0],
+];
+
+const options = {
+  legend: { position: "top" },
+};
 export default ResultScreen
